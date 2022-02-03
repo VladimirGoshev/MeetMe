@@ -1,0 +1,4548 @@
+{
+	"cases": [],
+	"suites": [{
+		"id": 1,
+		"title": "Register/Login",
+		"description": null,
+		"preconditions": null,
+		"suites": [],
+		"cases": [{
+			"id": 2,
+			"title": "Login with Apple account",
+			"description": "User can log in with Apple account",
+			"preconditions": "1. Navigate to the application \"MeetMe\"\n2. Executed on: iPhone XR, IOS version: 15",
+			"postconditions": null,
+			"priority": "medium",
+			"severity": "undefined",
+			"behavior": "positive",
+			"type": "functional",
+			"layer": "unknown",
+			"is_flaky": "no",
+			"automation": "is-not-automated",
+			"status": "actual",
+			"milestone": null,
+			"custom_fields": [],
+			"steps": [{
+				"position": 1,
+				"action": "Tap to the button \"Sign in with Apple\"",
+				"expected_result": "Login application is loaded successfully",
+				"data": ""
+			}, {
+				"position": 2,
+				"action": "Tap the button \"Continue\"",
+				"expected_result": "The user is logged in and is on the account page",
+				"data": ""
+			}]
+		}, {
+			"id": 3,
+			"title": "Login with Facebook",
+			"description": "The user must have to log in with Facebook",
+			"preconditions": "1. Navigate to the application \"MeetMe\"\n2. Executed on: iPhone XR, IOS version: 15",
+			"postconditions": null,
+			"priority": "medium",
+			"severity": "undefined",
+			"behavior": "positive",
+			"type": "functional",
+			"layer": "unknown",
+			"is_flaky": "no",
+			"automation": "is-not-automated",
+			"status": "actual",
+			"milestone": null,
+			"custom_fields": [],
+			"steps": [{
+				"position": 1,
+				"action": "Tap to the button \"Login with Facebook\"",
+				"expected_result": "Login application is loaded successfully",
+				"data": ""
+			}, {
+				"position": 2,
+				"action": "Tap the button \"Continue\"",
+				"expected_result": "The user is logged and is on the account page",
+				"data": ""
+			}]
+		}, {
+			"id": 4,
+			"title": "Login with valid data",
+			"description": "The user uses valid data to log into the application",
+			"preconditions": "1. Navigate to the application \"MeetMe\"\n2. Click the button \"Sign Up\"\n3. Executed on: iPhone XR, IOS version: 15",
+			"postconditions": null,
+			"priority": "high",
+			"severity": "undefined",
+			"behavior": "positive",
+			"type": "functional",
+			"layer": "unknown",
+			"is_flaky": "no",
+			"automation": "is-not-automated",
+			"status": "actual",
+			"milestone": null,
+			"custom_fields": [],
+			"steps": [{
+				"position": 1,
+				"action": "Insert data in all of the fields",
+				"expected_result": "Fields are filled",
+				"data": ""
+			}, {
+				"position": 2,
+				"action": "Click the \"Login\" button",
+				"expected_result": "The user is logged in",
+				"data": ""
+			}]
+		}, {
+			"id": 5,
+			"title": "The user cannot logged in with invalid data",
+			"description": null,
+			"preconditions": "1. Navigate to the application \"MeetMe\"\n2. Tap the button \"Sign Up\"\n3. Executed on: iPhone XR, IOS version: 15",
+			"postconditions": null,
+			"priority": "high",
+			"severity": "undefined",
+			"behavior": "positive",
+			"type": "functional",
+			"layer": "unknown",
+			"is_flaky": "no",
+			"automation": "is-not-automated",
+			"status": "actual",
+			"milestone": null,
+			"custom_fields": [],
+			"steps": [{
+				"position": 1,
+				"action": "Insert data in the fields \"Sign up\"",
+				"expected_result": "Fields are filled",
+				"data": ""
+			}, {
+				"position": 2,
+				"action": "Tap the \"Complete Registration\" button for Term of Service and Privacy Policy",
+				"expected_result": "The system notified the user that the data is invalid",
+				"data": ""
+			}]
+		}, {
+			"id": 6,
+			"title": "Login with wrong Email",
+			"description": "User cannot be logged with the wrong Email",
+			"preconditions": "1. Navigate to the application \"MeetMe\"\n2. Tap the button \"Sign Up\"\n3. Executed on: iPhone XR, IOS version: 15",
+			"postconditions": null,
+			"priority": "high",
+			"severity": "undefined",
+			"behavior": "negative",
+			"type": "functional",
+			"layer": "unknown",
+			"is_flaky": "no",
+			"automation": "is-not-automated",
+			"status": "actual",
+			"milestone": null,
+			"custom_fields": [],
+			"steps": [{
+				"position": 1,
+				"action": "Insert valid data \"Sign up\"",
+				"expected_result": "Fields are filled",
+				"data": ""
+			}, {
+				"position": 2,
+				"action": "Tap the \"Complete Registration\" button for Term of Service and Privacy Policy",
+				"expected_result": "The system notified the user that the Email is invalid",
+				"data": ""
+			}]
+		}, {
+			"id": 7,
+			"title": "Login with wrong password",
+			"description": "User cannot be logged with the wrong Password",
+			"preconditions": "1. Navigate to the application \"MeetMe\"\n2. Click the button \"Sign Up\"\n3. Executed on: iPhone XR, IOS version: 15",
+			"postconditions": null,
+			"priority": "high",
+			"severity": "undefined",
+			"behavior": "negative",
+			"type": "functional",
+			"layer": "unknown",
+			"is_flaky": "no",
+			"automation": "is-not-automated",
+			"status": "actual",
+			"milestone": null,
+			"custom_fields": [],
+			"steps": [{
+				"position": 1,
+				"action": "Insert valid data \"Sign up\"",
+				"expected_result": "Fields are filled",
+				"data": ""
+			}, {
+				"position": 2,
+				"action": "Tap the \"Complete Registration\" button for Term of Service and Privacy Policy",
+				"expected_result": "The system notified the user that the password is invalid",
+				"data": ""
+			}]
+		}, {
+			"id": 8,
+			"title": "Login with empty fields",
+			"description": "User cannot be logged with empty fields",
+			"preconditions": "1. Navigate to the application \"MeetMe\"\n2. Click the button \"Sign Up\"\n3. Executed on: iPhone XR, IOS version: 15",
+			"postconditions": null,
+			"priority": "high",
+			"severity": "undefined",
+			"behavior": "negative",
+			"type": "other",
+			"layer": "unknown",
+			"is_flaky": "no",
+			"automation": "is-not-automated",
+			"status": "actual",
+			"milestone": null,
+			"custom_fields": [],
+			"steps": [{
+				"position": 1,
+				"action": "Insert empty the fields in the \"Sign up\"",
+				"expected_result": "Fields are filled and \"Sign up\" button is inactive",
+				"data": ""
+			}]
+		}, {
+			"id": 9,
+			"title": "Login with empty email",
+			"description": "User cannot be logged with empty email field",
+			"preconditions": "1. Navigate to the application \"MeetMe\"\n2. Click the button \"Sign Up\"\n3. Executed on: iPhone XR, IOS version: 15",
+			"postconditions": null,
+			"priority": "high",
+			"severity": "undefined",
+			"behavior": "negative",
+			"type": "functional",
+			"layer": "unknown",
+			"is_flaky": "no",
+			"automation": "is-not-automated",
+			"status": "actual",
+			"milestone": null,
+			"custom_fields": [],
+			"steps": [{
+				"position": 1,
+				"action": "Insert correct inputs in the fields in the \"Sign up\"",
+				"expected_result": "Fields are filled",
+				"data": ""
+			}, {
+				"position": 2,
+				"action": "Tap the \"Complete Registration\" button for Term of Service and Privacy Policy",
+				"expected_result": "Fields are filled and \"Sign up\" button is inactive",
+				"data": ""
+			}]
+		}, {
+			"id": 10,
+			"title": "Login with empty password",
+			"description": "User cannot be logged with the empty password",
+			"preconditions": "1. Navigate to the application \"MeetMe\"\n2. Tap the button \"Sign Up\"\n3. Executed on: iPhone XR, IOS version: 15",
+			"postconditions": null,
+			"priority": "high",
+			"severity": "undefined",
+			"behavior": "negative",
+			"type": "functional",
+			"layer": "unknown",
+			"is_flaky": "no",
+			"automation": "is-not-automated",
+			"status": "actual",
+			"milestone": null,
+			"custom_fields": [],
+			"steps": [{
+				"position": 1,
+				"action": "Insert incorrect inputs in the fields in the \"Sign up\"",
+				"expected_result": "Fields are filled",
+				"data": ""
+			}, {
+				"position": 2,
+				"action": "Tap the \"Complete Registration\" button for Term of Service and Privacy Policy",
+				"expected_result": "Fields are filled and \"Sign up\" button is inactive",
+				"data": ""
+			}]
+		}, {
+			"id": 14,
+			"title": "Login with forgotten password",
+			"description": "User to log in with a forgotten password",
+			"preconditions": "1. Tap the button \"Log in here\"\n2. Executed on: iPhone XR, IOS version: 15\n3. Navigate to the application \"MeetMe\"",
+			"postconditions": null,
+			"priority": "high",
+			"severity": "undefined",
+			"behavior": "positive",
+			"type": "functional",
+			"layer": "unknown",
+			"is_flaky": "no",
+			"automation": "is-not-automated",
+			"status": "actual",
+			"milestone": null,
+			"custom_fields": [],
+			"steps": [{
+				"position": 1,
+				"action": "Tap the button \"Forgot Password\"",
+				"expected_result": "Forgot password window open successfully",
+				"data": ""
+			}, {
+				"position": 2,
+				"action": "Fill in the \"email\" field",
+				"expected_result": "The fields are filled",
+				"data": ""
+			}, {
+				"position": 3,
+				"action": "Tap the button \"Submit\"",
+				"expected_result": "Password changed successfully",
+				"data": ""
+			}]
+		}, {
+			"id": 20,
+			"title": "Registration with invalid password 15 characters",
+			"description": "The user cannot be registered with a password",
+			"preconditions": "1. Tap the button \"Sign Up\"\n2. Executed on: iPhone XR, IOS version: 15\n3. Navigate to the application \"MeetMe\"",
+			"postconditions": null,
+			"priority": "high",
+			"severity": "undefined",
+			"behavior": "negative",
+			"type": "other",
+			"layer": "unknown",
+			"is_flaky": "no",
+			"automation": "is-not-automated",
+			"status": "actual",
+			"milestone": null,
+			"custom_fields": [],
+			"steps": [{
+				"position": 1,
+				"action": "Insert incorrect inputs in the fields in the \"Sign up\"",
+				"expected_result": "Fields are filled",
+				"data": ""
+			}, {
+				"position": 2,
+				"action": "Tap the \"Complete Registration\" button for Term of Service and Privacy Policy",
+				"expected_result": "System notified the user about the invalid password",
+				"data": ""
+			}]
+		}, {
+			"id": 21,
+			"title": "Registration with too long name",
+			"description": "The user cannot be registered with too long name",
+			"preconditions": "1. Navigate to the application \"MeetMe\"\n2. Click the button \"Sign Up\"\n3. Executed on: iPhone XR, IOS version: 15",
+			"postconditions": null,
+			"priority": "high",
+			"severity": "undefined",
+			"behavior": "negative",
+			"type": "other",
+			"layer": "unknown",
+			"is_flaky": "no",
+			"automation": "is-not-automated",
+			"status": "actual",
+			"milestone": null,
+			"custom_fields": [],
+			"steps": [{
+				"position": 1,
+				"action": "Insert data in the fields",
+				"expected_result": "Fields are filled",
+				"data": ""
+			}, {
+				"position": 2,
+				"action": "Tap the \"Complete Registration\" button for Term of Service and Privacy Policy",
+				"expected_result": "System notified the user about the invalid name",
+				"data": ""
+			}]
+		}, {
+			"id": 22,
+			"title": "Registration with registered Email",
+			"description": "The user cannot be registered with already registered Email",
+			"preconditions": "1. User has registration\n2. Navigate to the application \"MeetMe\"\n3. Click the button \"Sign Up\"\n4. Executed on: iPhone XR, IOS version: 15",
+			"postconditions": null,
+			"priority": "high",
+			"severity": "undefined",
+			"behavior": "negative",
+			"type": "functional",
+			"layer": "unknown",
+			"is_flaky": "no",
+			"automation": "is-not-automated",
+			"status": "actual",
+			"milestone": null,
+			"custom_fields": [],
+			"steps": [{
+				"position": 1,
+				"action": "Insert data in the fields \"Sign up\"",
+				"expected_result": "Fields are filled",
+				"data": ""
+			}, {
+				"position": 2,
+				"action": "Tap the \"Complete Registration\" button for Term of Service and Privacy Policy",
+				"expected_result": "The system notified the user that Email is registered all ready",
+				"data": ""
+			}]
+		}, {
+			"id": 23,
+			"title": "Registration with name from special characters",
+			"description": "The user cannot be registered with a name from special characters",
+			"preconditions": "1. Navigate to the application \"MeetMe\"\n2. Click the button \"Sign Up\"\n3. Executed on: iPhone XR, IOS version: 15",
+			"postconditions": null,
+			"priority": "high",
+			"severity": "undefined",
+			"behavior": "negative",
+			"type": "functional",
+			"layer": "unknown",
+			"is_flaky": "no",
+			"automation": "is-not-automated",
+			"status": "actual",
+			"milestone": null,
+			"custom_fields": [],
+			"steps": [{
+				"position": 1,
+				"action": "Insert data in the fields",
+				"expected_result": "Fields are filled",
+				"data": ""
+			}, {
+				"position": 2,
+				"action": "Tap the \"Complete Registration\" button for Term of Service and Privacy Policy",
+				"expected_result": "The system notified the user that the Name is invalid",
+				"data": ""
+			}]
+		}, {
+			"id": 24,
+			"title": "Registration with valid password four characters",
+			"description": "The user can be registered with a password from 4 characters",
+			"preconditions": "1. Navigate to the application \"MeetMe\"\n2. Click the button \"Sign Up\"\n3. Executed on: iPhone XR, IOS version: 15",
+			"postconditions": null,
+			"priority": "high",
+			"severity": "undefined",
+			"behavior": "positive",
+			"type": "functional",
+			"layer": "unknown",
+			"is_flaky": "no",
+			"automation": "is-not-automated",
+			"status": "actual",
+			"milestone": null,
+			"custom_fields": [],
+			"steps": [{
+				"position": 1,
+				"action": "Insert data in the fields",
+				"expected_result": "Fields are filled",
+				"data": ""
+			}, {
+				"position": 2,
+				"action": "Tap the \"Complete Registration\" button for Term of Service and Privacy Policy",
+				"expected_result": "User is registered successfully",
+				"data": ""
+			}]
+		}, {
+			"id": 25,
+			"title": "Registration with empty Birthday field",
+			"description": "The user cannot be registered with empty Birthday field",
+			"preconditions": "1. Navigate to the application \"MeetMe\"\n2. Click the button \"Sign Up\"\n3. Executed on: iPhone XR, IOS version: 15",
+			"postconditions": null,
+			"priority": "high",
+			"severity": "undefined",
+			"behavior": "negative",
+			"type": "functional",
+			"layer": "unknown",
+			"is_flaky": "no",
+			"automation": "is-not-automated",
+			"status": "actual",
+			"milestone": null,
+			"custom_fields": [],
+			"steps": [{
+				"position": 1,
+				"action": "Insert empty the fields in the \"Sign up\"",
+				"expected_result": "Fields are filled and \"Sign up\" button is inactive",
+				"data": ""
+			}]
+		}, {
+			"id": 27,
+			"title": "Registration with valid password 10 characters",
+			"description": "The user can be registered with a password from 10 characters",
+			"preconditions": "1. Navigate to the application \"MeetMe\"\n2. Click the button \"Sign Up\"\n3. Executed on: iPhone XR, IOS version: 15",
+			"postconditions": null,
+			"priority": "high",
+			"severity": "undefined",
+			"behavior": "positive",
+			"type": "functional",
+			"layer": "unknown",
+			"is_flaky": "no",
+			"automation": "is-not-automated",
+			"status": "actual",
+			"milestone": null,
+			"custom_fields": [],
+			"steps": [{
+				"position": 1,
+				"action": "Insert data in the fields",
+				"expected_result": "Fields are filled",
+				"data": ""
+			}, {
+				"position": 2,
+				"action": "Tap the \"Complete Registration\" button for Term of Service and Privacy Policy",
+				"expected_result": "User is registered successfully",
+				"data": ""
+			}]
+		}, {
+			"id": 130,
+			"title": "Set a birthday date after 2010",
+			"description": "User can not register if it is not older than 18 years old",
+			"preconditions": "1. Open MeetMe application\n2. Executed on: iPhone XR, IOS version: 15",
+			"postconditions": null,
+			"priority": "high",
+			"severity": "undefined",
+			"behavior": "positive",
+			"type": "functional",
+			"layer": "unknown",
+			"is_flaky": "no",
+			"automation": "is-not-automated",
+			"status": "actual",
+			"milestone": null,
+			"custom_fields": [],
+			"steps": [{
+				"position": 1,
+				"action": "Tap the \"Anyone can join FREE\" button",
+				"expected_result": "User is redirected to the registration form",
+				"data": ""
+			}, {
+				"position": 2,
+				"action": "Fill all the fields correctly and set a birthday younger than 18 years old",
+				"expected_result": "It shows up a message \"Based on the information you are not...\"",
+				"data": ""
+			}]
+		}]
+	}, {
+		"id": 2,
+		"title": "Install",
+		"description": null,
+		"preconditions": null,
+		"suites": [],
+		"cases": [{
+			"id": 1,
+			"title": "Install the app",
+			"description": "IOS user can download and install it from App Store",
+			"preconditions": "1. Navigate to the application \"App store\"\n2. Click the button \"Search\"\n3. Write on the search button: Meetme\n4. Click the button \"Get\"\n5. Executed on: iPhone XR, IOS version: 15",
+			"postconditions": null,
+			"priority": "high",
+			"severity": "undefined",
+			"behavior": "positive",
+			"type": "functional",
+			"layer": "unknown",
+			"is_flaky": "no",
+			"automation": "is-not-automated",
+			"status": "actual",
+			"milestone": null,
+			"custom_fields": [],
+			"steps": [{
+				"position": 1,
+				"action": "Tap on the install button",
+				"expected_result": "",
+				"data": ""
+			}, {
+				"position": 2,
+				"action": "Navigate to the menu and click on the newly installed app",
+				"expected_result": "The application should be installed successfully",
+				"data": ""
+			}]
+		}, {
+			"id": 11,
+			"title": "Uninstall the app",
+			"description": "User must uninstall the app correctly",
+			"preconditions": "1. The application \"MeetMe\" is installed\n2. Executed on: iPhone XR, IOS version: 15",
+			"postconditions": null,
+			"priority": "high",
+			"severity": "undefined",
+			"behavior": "positive",
+			"type": "functional",
+			"layer": "unknown",
+			"is_flaky": "no",
+			"automation": "is-not-automated",
+			"status": "actual",
+			"milestone": null,
+			"custom_fields": [],
+			"steps": [{
+				"position": 1,
+				"action": "Hold the application icon \"MeetMe\"",
+				"expected_result": "A window opens successfully",
+				"data": ""
+			}, {
+				"position": 2,
+				"action": "Tap the button \"Remove App\"",
+				"expected_result": "The attachment is removed successfully",
+				"data": ""
+			}]
+		}, {
+			"id": 15,
+			"title": "Memory",
+			"description": "User should be able to see error message when the device memory is low",
+			"preconditions": "1. Navigate to the application \"App store\"\n2. Click the button \"Search\"\n3. Write on the search button: Meetme\n4. Click the button \"Get\"\n5. Executed on: iPhone XR, IOS version: 15",
+			"postconditions": null,
+			"priority": "high",
+			"severity": "undefined",
+			"behavior": "positive",
+			"type": "functional",
+			"layer": "unknown",
+			"is_flaky": "no",
+			"automation": "is-not-automated",
+			"status": "actual",
+			"milestone": null,
+			"custom_fields": [],
+			"steps": [{
+				"position": 1,
+				"action": "Tap on the install button",
+				"expected_result": "",
+				"data": ""
+			}, {
+				"position": 2,
+				"action": "Wait till the application gets installed and verified",
+				"expected_result": "Application should display with a proper error message when device memory is low",
+				"data": ""
+			}]
+		}]
+	}, {
+		"id": 3,
+		"title": "Functions",
+		"description": null,
+		"preconditions": null,
+		"suites": [],
+		"cases": [{
+			"id": 109,
+			"title": "User - Restore purchases",
+			"description": "The user can restore purchases",
+			"preconditions": "1. Registered user\n2. Open MeetMe application\n3. Tap the \u201cMe\u201c button\n4. Tap the \"Settings\" button\n5. Executed on: iPhone XR, IOS version: 15",
+			"postconditions": null,
+			"priority": "medium",
+			"severity": "undefined",
+			"behavior": "positive",
+			"type": "functional",
+			"layer": "unknown",
+			"is_flaky": "no",
+			"automation": "is-not-automated",
+			"status": "actual",
+			"milestone": null,
+			"custom_fields": [],
+			"steps": [{
+				"position": 1,
+				"action": "Tap the \"Restore Purchases\" button",
+				"expected_result": "The user successfully refunds the purchases",
+				"data": ""
+			}]
+		}, {
+			"id": 12,
+			"title": "Interruption by Calls",
+			"description": "The user should be able to accept Phone calls when the application is running and should continue from the same point",
+			"preconditions": "1. Open the application\n2. Executed on: iPhone XR, IOS version: 15",
+			"postconditions": null,
+			"priority": "high",
+			"severity": "undefined",
+			"behavior": "positive",
+			"type": "functional",
+			"layer": "unknown",
+			"is_flaky": "no",
+			"automation": "is-not-automated",
+			"status": "actual",
+			"milestone": null,
+			"custom_fields": [],
+			"steps": [{
+				"position": 1,
+				"action": "Make a call from another device to the device where you have opened the application",
+				"expected_result": "The call is successful",
+				"data": ""
+			}, {
+				"position": 2,
+				"action": "Pick up the call",
+				"expected_result": "",
+				"data": ""
+			}, {
+				"position": 3,
+				"action": "Close the messaging app and verify",
+				"expected_result": "User should be able to accept Phone calls when the application is running and should continue from the same point",
+				"data": ""
+			}]
+		}, {
+			"id": 13,
+			"title": "Interruption by Messages",
+			"description": "User should be able to accept messages when the application is running and should continue from the same point after reading the message",
+			"preconditions": "1. Executed on: iPhone XR, IOS version: 15\n2. Open the application",
+			"postconditions": null,
+			"priority": "high",
+			"severity": "undefined",
+			"behavior": "positive",
+			"type": "functional",
+			"layer": "unknown",
+			"is_flaky": "no",
+			"automation": "is-not-automated",
+			"status": "actual",
+			"milestone": null,
+			"custom_fields": [],
+			"steps": [{
+				"position": 1,
+				"action": "Send a message from another device to the device where you have opened the application",
+				"expected_result": "Send the message successfully",
+				"data": ""
+			}, {
+				"position": 2,
+				"action": "Read the message",
+				"expected_result": "Read the message successfully",
+				"data": ""
+			}, {
+				"position": 3,
+				"action": "Close the messaging app and verify",
+				"expected_result": "User should be able to accept messages when the application is running and should continue from the same point after reading the message",
+				"data": ""
+			}]
+		}, {
+			"id": 26,
+			"title": "Registration with empty Gender field",
+			"description": "The user cannot be registered with empty Gender field",
+			"preconditions": "1. Executed on: iPhone XR, IOS version: 15\n2. Navigate to the application \"MeetMe\"\n3. Click the button \"Sign Up\"",
+			"postconditions": null,
+			"priority": "high",
+			"severity": "undefined",
+			"behavior": "negative",
+			"type": "functional",
+			"layer": "unknown",
+			"is_flaky": "no",
+			"automation": "is-not-automated",
+			"status": "actual",
+			"milestone": null,
+			"custom_fields": [],
+			"steps": [{
+				"position": 1,
+				"action": "Insert empty the field in the \"Sign up\"",
+				"expected_result": "Fields are filled and \"Sign up\" button is inactive",
+				"data": ""
+			}]
+		}, {
+			"id": 50,
+			"title": "Filter people by have children or not",
+			"description": "Test that, user can filter people by have children or not",
+			"preconditions": "1. Registered user\n2. Open MeetMe application\n3. Executed on: iPhone XR, IOS version: 15",
+			"postconditions": null,
+			"priority": "medium",
+			"severity": "undefined",
+			"behavior": "positive",
+			"type": "functional",
+			"layer": "unknown",
+			"is_flaky": "no",
+			"automation": "is-not-automated",
+			"status": "actual",
+			"milestone": null,
+			"custom_fields": [],
+			"steps": [{
+				"position": 1,
+				"action": "Tap the \u201cFilter\u201c button",
+				"expected_result": "All filters are loaded",
+				"data": ""
+			}, {
+				"position": 2,
+				"action": "Tap \u201cHas children\u201c filed",
+				"expected_result": "Options are loaded",
+				"data": ""
+			}, {
+				"position": 3,
+				"action": "Tap \u201cYes and they live with me\u201c",
+				"expected_result": "Field is checked",
+				"data": ""
+			}, {
+				"position": 4,
+				"action": "Tap the \u201cBack\u201c button",
+				"expected_result": "The list with people with children is loaded",
+				"data": ""
+			}]
+		}, {
+			"id": 53,
+			"title": "Connect with TikTok profile",
+			"description": "Test that user can connect MeetMe profile with TikTok profile",
+			"preconditions": "1. User has TikTok profile\n2. Open MeetMe application\n3. Executed on: iPhone XR, IOS version: 15",
+			"postconditions": null,
+			"priority": "medium",
+			"severity": "undefined",
+			"behavior": "positive",
+			"type": "functional",
+			"layer": "unknown",
+			"is_flaky": "no",
+			"automation": "is-not-automated",
+			"status": "actual",
+			"milestone": null,
+			"custom_fields": [],
+			"steps": [{
+				"position": 1,
+				"action": "Tap the \u201cTikTok\u201c button",
+				"expected_result": "TikTok page is loaded",
+				"data": ""
+			}, {
+				"position": 2,
+				"action": "Aprove the TikTok profile",
+				"expected_result": "The profiles are connected",
+				"data": ""
+			}]
+		}, {
+			"id": 64,
+			"title": "Who I viewed - Views",
+			"description": "Test that, the user can check which profiles are viewed",
+			"preconditions": "1. Registered user\n2. Open MeetMe application\n3. Tap the \"Me\" button\n4. Executed on: iPhone XR, IOS version: 15",
+			"postconditions": null,
+			"priority": "medium",
+			"severity": "undefined",
+			"behavior": "positive",
+			"type": "functional",
+			"layer": "unknown",
+			"is_flaky": "no",
+			"automation": "is-not-automated",
+			"status": "actual",
+			"milestone": null,
+			"custom_fields": [],
+			"steps": [{
+				"position": 1,
+				"action": "Tap the \u201cViews\u201c button",
+				"expected_result": "Views page is opened",
+				"data": ""
+			}, {
+				"position": 2,
+				"action": "Tap the \u201cI VIEWED\u201c button",
+				"expected_result": "Profiles which was viewed are loaded",
+				"data": ""
+			}]
+		}, {
+			"id": 66,
+			"title": "Like for Matching",
+			"description": "Test that, the user can Like some profile and match with him after that",
+			"preconditions": "1. Registered user\n2. Open MeetMe application\n3. Tap the \"Match\" button\n4. Executed on: iPhone XR, IOS version: 15",
+			"postconditions": null,
+			"priority": "medium",
+			"severity": "undefined",
+			"behavior": "positive",
+			"type": "functional",
+			"layer": "unknown",
+			"is_flaky": "no",
+			"automation": "is-not-automated",
+			"status": "actual",
+			"milestone": null,
+			"custom_fields": [],
+			"steps": [{
+				"position": 1,
+				"action": "Tap the \u201cLike\u201c button",
+				"expected_result": "The profile is liked and there is a new profile",
+				"data": ""
+			}]
+		}, {
+			"id": 71,
+			"title": "Application is adaptable to the device screen",
+			"description": "Test that, the application will load on the full screen of the phone",
+			"preconditions": "Open MeetMe application\nExecuted on: iPhone XR, IOS version: 15",
+			"postconditions": null,
+			"priority": "medium",
+			"severity": "undefined",
+			"behavior": "positive",
+			"type": "functional",
+			"layer": "unknown",
+			"is_flaky": "no",
+			"automation": "is-not-automated",
+			"status": "actual",
+			"milestone": null,
+			"custom_fields": [],
+			"steps": [{
+				"position": 1,
+				"action": "Check that the app is on the full screen",
+				"expected_result": "Check that the app is on the full screen",
+				"data": ""
+			}]
+		}, {
+			"id": 72,
+			"title": "Application will rotate in Landscape screen mode",
+			"description": "Test that, the application will load on the full screen of the phone in landscape mood",
+			"preconditions": "1. Auto Rotate mood on the phone is ON\n2. Open MeetMe application\n3. Executed on: iPhone XR, IOS version: 15",
+			"postconditions": null,
+			"priority": "medium",
+			"severity": "undefined",
+			"behavior": "positive",
+			"type": "functional",
+			"layer": "unknown",
+			"is_flaky": "no",
+			"automation": "is-not-automated",
+			"status": "actual",
+			"milestone": null,
+			"custom_fields": [],
+			"steps": [{
+				"position": 1,
+				"action": "Tap the \u201cMe\u201c button",
+				"expected_result": "The \u201cMe\u201c page is loaded",
+				"data": ""
+			}, {
+				"position": 2,
+				"action": "Rotate the phone in Landscape mood",
+				"expected_result": "The application is in Landscape mood and is in full screen",
+				"data": ""
+			}]
+		}, {
+			"id": 73,
+			"title": "Application is working on Wi-Fi",
+			"description": "Test that, the is working while phone is connected on Wi-Fi",
+			"preconditions": "1. Connect to Wi-Fi network\n2. Open MeetMe application\n3. Executed on: iPhone XR, IOS version: 15",
+			"postconditions": null,
+			"priority": "medium",
+			"severity": "undefined",
+			"behavior": "positive",
+			"type": "functional",
+			"layer": "unknown",
+			"is_flaky": "no",
+			"automation": "is-not-automated",
+			"status": "actual",
+			"milestone": null,
+			"custom_fields": [],
+			"steps": [{
+				"position": 1,
+				"action": "Tap the \u201cLocals\u201c button",
+				"expected_result": "Tap the \u201cLocals\u201c button",
+				"data": ""
+			}, {
+				"position": 2,
+				"action": "Refresh the page by swiping down",
+				"expected_result": "Page is refreshed",
+				"data": ""
+			}]
+		}, {
+			"id": 74,
+			"title": "Application is working on 2G",
+			"description": "Test that, the is working while phone is connected on 2G",
+			"preconditions": "1. The phone is connected with 2G mobile network\n2. Open MeetMe application\n3. Executed on: iPhone XR, IOS version: 15",
+			"postconditions": null,
+			"priority": "medium",
+			"severity": "undefined",
+			"behavior": "positive",
+			"type": "functional",
+			"layer": "unknown",
+			"is_flaky": "no",
+			"automation": "is-not-automated",
+			"status": "actual",
+			"milestone": null,
+			"custom_fields": [],
+			"steps": [{
+				"position": 1,
+				"action": "Tap the \u201cLocals\u201c button",
+				"expected_result": "Many profiles are loaded",
+				"data": ""
+			}, {
+				"position": 2,
+				"action": "Refresh the page by swiping down",
+				"expected_result": "Page is refreshed",
+				"data": ""
+			}]
+		}, {
+			"id": 75,
+			"title": "Application is working on 3G",
+			"description": "Test that, the is working while phone is connected on 3G",
+			"preconditions": "1. The phone is connected with 3G mobile network\n2. Open MeetMe application\n3. Executed on: iPhone XR, IOS version: 15",
+			"postconditions": null,
+			"priority": "high",
+			"severity": "undefined",
+			"behavior": "positive",
+			"type": "functional",
+			"layer": "unknown",
+			"is_flaky": "no",
+			"automation": "is-not-automated",
+			"status": "actual",
+			"milestone": null,
+			"custom_fields": [],
+			"steps": [{
+				"position": 1,
+				"action": "Tap the \u201cLocals\u201c button",
+				"expected_result": "Many profiles are loaded",
+				"data": ""
+			}, {
+				"position": 2,
+				"action": "Refresh the page by swiping down",
+				"expected_result": "Page is refreshed",
+				"data": ""
+			}]
+		}, {
+			"id": 76,
+			"title": "Application is working on 4G",
+			"description": null,
+			"preconditions": "1. The phone is connected with 4G mobile network\n2. Open MeetMe application\n3. Executed on: iPhone XR, IOS version: 15",
+			"postconditions": null,
+			"priority": "high",
+			"severity": "undefined",
+			"behavior": "positive",
+			"type": "functional",
+			"layer": "unknown",
+			"is_flaky": "no",
+			"automation": "is-not-automated",
+			"status": "actual",
+			"milestone": null,
+			"custom_fields": [],
+			"steps": [{
+				"position": 1,
+				"action": "Tap the \u201cLocals\u201c button",
+				"expected_result": "Many profiles are loaded",
+				"data": ""
+			}, {
+				"position": 2,
+				"action": "Refresh the page by swiping down",
+				"expected_result": "Page is refreshed",
+				"data": ""
+			}]
+		}, {
+			"id": 77,
+			"title": "Successfuly image capturing",
+			"description": "Test that, the user can make screen capturing while the application is working",
+			"preconditions": "1. Open MeetMe application\n2. Executed on: iPhone XR, IOS version: 15",
+			"postconditions": null,
+			"priority": "medium",
+			"severity": "undefined",
+			"behavior": "positive",
+			"type": "functional",
+			"layer": "unknown",
+			"is_flaky": "no",
+			"automation": "is-not-automated",
+			"status": "actual",
+			"milestone": null,
+			"custom_fields": [],
+			"steps": [{
+				"position": 1,
+				"action": "Make a screenshot of the applicati on",
+				"expected_result": "The screenshot is made successfully",
+				"data": ""
+			}]
+		}, {
+			"id": 78,
+			"title": "Icon is removed after delete the application",
+			"description": "Test that, the icon of the application is removed after deleting it",
+			"preconditions": "1. MeetMe application is installed on the phone\n2. Executed on: iPhone XR, IOS version: 15",
+			"postconditions": null,
+			"priority": "medium",
+			"severity": "undefined",
+			"behavior": "positive",
+			"type": "functional",
+			"layer": "unknown",
+			"is_flaky": "no",
+			"automation": "is-not-automated",
+			"status": "actual",
+			"milestone": null,
+			"custom_fields": [],
+			"steps": [{
+				"position": 1,
+				"action": "Tap and hold over the icon of \"MeetMe\"",
+				"expected_result": "Option for deleting is visible",
+				"data": ""
+			}, {
+				"position": 2,
+				"action": "Tap the \u201cUninstall\u201c button",
+				"expected_result": "The system is asking for confirmation delete",
+				"data": ""
+			}, {
+				"position": 3,
+				"action": "Tap the \u201cOK\u201c button",
+				"expected_result": "The application is removed",
+				"data": ""
+			}]
+		}, {
+			"id": 80,
+			"title": "Notification about network problem",
+			"description": null,
+			"preconditions": "1. Open MeetMe application\n2. Executed on: iPhone XR, IOS version: 15",
+			"postconditions": null,
+			"priority": "high",
+			"severity": "undefined",
+			"behavior": "positive",
+			"type": "functional",
+			"layer": "unknown",
+			"is_flaky": "no",
+			"automation": "is-not-automated",
+			"status": "actual",
+			"milestone": null,
+			"custom_fields": [],
+			"steps": [{
+				"position": 1,
+				"action": "Stop Wi-Fi connection on the phone",
+				"expected_result": "Wi-Fi is off",
+				"data": ""
+			}, {
+				"position": 2,
+				"action": "Stop mobile data on the phone",
+				"expected_result": "System notified the user about missing connection",
+				"data": ""
+			}]
+		}, {
+			"id": 81,
+			"title": "Phone receive messages while application is open",
+			"description": "Test that, the phone will receive messages while the application MeetMe is open",
+			"preconditions": "1. Open MeetMe application\n2. Executed on: iPhone XR, IOS version: 15",
+			"postconditions": null,
+			"priority": "high",
+			"severity": "undefined",
+			"behavior": "positive",
+			"type": "functional",
+			"layer": "unknown",
+			"is_flaky": "no",
+			"automation": "is-not-automated",
+			"status": "actual",
+			"milestone": null,
+			"custom_fields": [],
+			"steps": [{
+				"position": 1,
+				"action": "Get another phone and send a message to the testing phone",
+				"expected_result": "Testing phone receives the message",
+				"data": ""
+			}]
+		}, {
+			"id": 82,
+			"title": "Whatching live video",
+			"description": "Testing that user can watch live streaming video",
+			"preconditions": "1. Registered user\n2. Open MeetMe application\n3. Executed on: iPhone XR, IOS version: 15",
+			"postconditions": null,
+			"priority": "high",
+			"severity": "undefined",
+			"behavior": "positive",
+			"type": "functional",
+			"layer": "unknown",
+			"is_flaky": "no",
+			"automation": "is-not-automated",
+			"status": "actual",
+			"milestone": null,
+			"custom_fields": [],
+			"steps": [{
+				"position": 1,
+				"action": "Tap the \u201cLive\u201c button",
+				"expected_result": "The \u201cLive\u201c page with all streaming videos is loaded",
+				"data": ""
+			}, {
+				"position": 2,
+				"action": "Tap the \u201cTrending\u201c button",
+				"expected_result": "Page with trending streaming is loaded",
+				"data": ""
+			}, {
+				"position": 3,
+				"action": "Tap the first stream of the list",
+				"expected_result": "Stream begins",
+				"data": ""
+			}]
+		}, {
+			"id": 83,
+			"title": "User send message in live stream",
+			"description": "Testing that user can watch live streaming video",
+			"preconditions": "1. Registered user\n2. Open MeetMe application\n3. Tap the \u201cLive\u201c button\n4. Executed on: iPhone XR, IOS version: 15",
+			"postconditions": null,
+			"priority": "medium",
+			"severity": "undefined",
+			"behavior": "positive",
+			"type": "functional",
+			"layer": "unknown",
+			"is_flaky": "no",
+			"automation": "is-not-automated",
+			"status": "actual",
+			"milestone": null,
+			"custom_fields": [],
+			"steps": [{
+				"position": 1,
+				"action": "Tap the \u201cTrending\u201c button",
+				"expected_result": "Page with trending streaming is loaded",
+				"data": ""
+			}, {
+				"position": 2,
+				"action": "Tap the first stream of the list",
+				"expected_result": "Stream begins",
+				"data": ""
+			}, {
+				"position": 3,
+				"action": "Insert some message in the \u201cHi\u201c field",
+				"expected_result": "Field is filed",
+				"data": ""
+			}, {
+				"position": 4,
+				"action": "Tap the \u201cSend\u201c button",
+				"expected_result": "The message is showed in the stream",
+				"data": ""
+			}]
+		}, {
+			"id": 84,
+			"title": "Send hearts in live stream",
+			"description": "Testing that user can send Hearts in live stream",
+			"preconditions": "1. Registered user\n2. Open MeetMe application\n3. Tap the \u201cLive\u201c button\n4. Executed on: iPhone XR, IOS version: 15",
+			"postconditions": null,
+			"priority": "medium",
+			"severity": "undefined",
+			"behavior": "positive",
+			"type": "functional",
+			"layer": "unknown",
+			"is_flaky": "no",
+			"automation": "is-not-automated",
+			"status": "actual",
+			"milestone": null,
+			"custom_fields": [],
+			"steps": [{
+				"position": 1,
+				"action": "Tap the \u201cTrending\u201c button",
+				"expected_result": "Page with trending streaming is loaded",
+				"data": ""
+			}, {
+				"position": 2,
+				"action": "Tap the first stream of the list",
+				"expected_result": "Stream begins",
+				"data": ""
+			}, {
+				"position": 3,
+				"action": "Tap the \u201cHeart\u201c button",
+				"expected_result": "Hearts are sent and they are visible in the stream",
+				"data": ""
+			}]
+		}, {
+			"id": 85,
+			"title": "Search for live straming by name",
+			"description": "Testing that user can search by keyword for live streaming",
+			"preconditions": "1. Registered user\n2. Open MeetMe application\n3. Tap the \u201cLive\u201c button\n4. Executed on: iPhone XR, IOS version: 15",
+			"postconditions": null,
+			"priority": "medium",
+			"severity": "undefined",
+			"behavior": "positive",
+			"type": "functional",
+			"layer": "unknown",
+			"is_flaky": "no",
+			"automation": "is-not-automated",
+			"status": "actual",
+			"milestone": null,
+			"custom_fields": [],
+			"steps": [{
+				"position": 1,
+				"action": "Tap the \u201cSearch\u201c button",
+				"expected_result": "The search page is open",
+				"data": ""
+			}, {
+				"position": 2,
+				"action": "Insert searching keyword",
+				"expected_result": "Results are visible immediately",
+				"data": ""
+			}]
+		}, {
+			"id": 89,
+			"title": "Start live stream",
+			"description": "Testing that user can start live stream",
+			"preconditions": "1. Registered user\n2. Open MeetMe application\n3. Tap the \u201cLive\u201c button\n4. Executed on: iPhone XR, IOS version: 15",
+			"postconditions": null,
+			"priority": "high",
+			"severity": "undefined",
+			"behavior": "positive",
+			"type": "functional",
+			"layer": "unknown",
+			"is_flaky": "no",
+			"automation": "is-not-automated",
+			"status": "actual",
+			"milestone": null,
+			"custom_fields": [],
+			"steps": [{
+				"position": 1,
+				"action": "Tap the \u201cGO LIVE!\u201c button",
+				"expected_result": "Page with instructions is loaded",
+				"data": ""
+			}, {
+				"position": 2,
+				"action": "Tap the field about Terms",
+				"expected_result": "Tap the field about Terms",
+				"data": ""
+			}, {
+				"position": 3,
+				"action": "Tap the \u201cGOT IT\u201c button",
+				"expected_result": "Page with video is loaded",
+				"data": ""
+			}, {
+				"position": 4,
+				"action": "User make face visible and tap the \u201cSTART!\u201c button",
+				"expected_result": "Stream is started",
+				"data": ""
+			}]
+		}, {
+			"id": 90,
+			"title": "Share the stream via Email",
+			"description": "Testing that user can share stream via Email",
+			"preconditions": "1. User has registered Email in Gmail application\n2. Registered user\n3. Open MeetMe application\n4. Tap the \u201cLive\u201c button\n5. Executed on: iPhone XR, IOS version: 15",
+			"postconditions": null,
+			"priority": "medium",
+			"severity": "undefined",
+			"behavior": "positive",
+			"type": "functional",
+			"layer": "unknown",
+			"is_flaky": "no",
+			"automation": "is-not-automated",
+			"status": "actual",
+			"milestone": null,
+			"custom_fields": [],
+			"steps": [{
+				"position": 1,
+				"action": "Tap over the first possible Stream",
+				"expected_result": "Stream is started",
+				"data": ""
+			}, {
+				"position": 2,
+				"action": "Tap the \u201c+\u201c button",
+				"expected_result": "More options are visible",
+				"data": ""
+			}, {
+				"position": 3,
+				"action": "Tap the \u201cShare\u201c button",
+				"expected_result": "The system shows different ways to share",
+				"data": ""
+			}, {
+				"position": 4,
+				"action": "Tap the \u201cGmail\u201c button",
+				"expected_result": "Gmail application is opened",
+				"data": ""
+			}, {
+				"position": 5,
+				"action": "Insert Email of the recipient",
+				"expected_result": "Insert Email of the recipient",
+				"data": ""
+			}, {
+				"position": 6,
+				"action": "Tap the \u201cSend\u201c button",
+				"expected_result": "Link to stream is sent via Email",
+				"data": ""
+			}]
+		}, {
+			"id": 91,
+			"title": "Search for live straming by description",
+			"description": "Testing that user can search by keyword for live streaming",
+			"preconditions": "1. Registered user\n2. Open MeetMe application\n3. Tap the \u201cLive\u201c button\n4. Executed on: iPhone XR, IOS version: 15",
+			"postconditions": null,
+			"priority": "medium",
+			"severity": "undefined",
+			"behavior": "positive",
+			"type": "functional",
+			"layer": "unknown",
+			"is_flaky": "no",
+			"automation": "is-not-automated",
+			"status": "actual",
+			"milestone": null,
+			"custom_fields": [],
+			"steps": [{
+				"position": 1,
+				"action": "Tap the \u201cSearch\u201c button",
+				"expected_result": "The search page is open",
+				"data": ""
+			}, {
+				"position": 2,
+				"action": "Tap the \u201cDESCRIPTION\u201c button",
+				"expected_result": "The button is marked in red",
+				"data": ""
+			}, {
+				"position": 3,
+				"action": "Insert searching keyword",
+				"expected_result": "Results are visible immediately",
+				"data": ""
+			}]
+		}, {
+			"id": 94,
+			"title": "User send gifts in live stream",
+			"description": "Testing that user can send gifts in live stream if he have enought credits",
+			"preconditions": "1. Registered user\n2. Open MeetMe application\n3. User have 5 credits\n4. Tap the \u201cLive\u201c button\n5. Executed on: iPhone XR, IOS version: 15",
+			"postconditions": null,
+			"priority": "medium",
+			"severity": "undefined",
+			"behavior": "positive",
+			"type": "functional",
+			"layer": "unknown",
+			"is_flaky": "no",
+			"automation": "is-not-automated",
+			"status": "actual",
+			"milestone": null,
+			"custom_fields": [],
+			"steps": [{
+				"position": 1,
+				"action": "Tap the \u201cTrending\u201c button",
+				"expected_result": "Page with trending streaming is loaded",
+				"data": ""
+			}, {
+				"position": 2,
+				"action": "Tap the first stream of the list",
+				"expected_result": "Tap the first stream of the list",
+				"data": ""
+			}, {
+				"position": 3,
+				"action": "Tap the \u201cGifts\u201c button",
+				"expected_result": "The page with gifts is loaded",
+				"data": ""
+			}, {
+				"position": 4,
+				"action": "Tap the first one which cost 5 credits",
+				"expected_result": "Gift is sent",
+				"data": ""
+			}]
+		}, {
+			"id": 108,
+			"title": "User can choose different packages Stealth Mode",
+			"description": null,
+			"preconditions": "1. Registered user\n2. Open MeetMe application\n3. Tap the \u201cMe\u201c button\n4. Tap the \"Settings\" button\n5. Executed on: iPhone XR, IOS version: 15",
+			"postconditions": null,
+			"priority": "medium",
+			"severity": "undefined",
+			"behavior": "positive",
+			"type": "functional",
+			"layer": "unknown",
+			"is_flaky": "no",
+			"automation": "is-not-automated",
+			"status": "actual",
+			"milestone": null,
+			"custom_fields": [],
+			"steps": [{
+				"position": 1,
+				"action": "Tap the \"Stealth Mode\" button",
+				"expected_result": "The page \"Matches\" is loaded",
+				"data": ""
+			}, {
+				"position": 2,
+				"action": "Choose different packages",
+				"expected_result": "The user can choose different packages successfully",
+				"data": ""
+			}]
+		}, {
+			"id": 129,
+			"title": "GPS",
+			"description": "User can disable GPS",
+			"preconditions": "1. Registered user\n2. Executed on: iPhone XR, IOS version: 15",
+			"postconditions": null,
+			"priority": "medium",
+			"severity": "undefined",
+			"behavior": "positive",
+			"type": "functional",
+			"layer": "unknown",
+			"is_flaky": "no",
+			"automation": "is-not-automated",
+			"status": "actual",
+			"milestone": null,
+			"custom_fields": [],
+			"steps": [{
+				"position": 1,
+				"action": "Slide down the phone functions drop-down menu",
+				"expected_result": "It shows up all functions",
+				"data": ""
+			}, {
+				"position": 2,
+				"action": "Turn on mobile phone GPS and disable it",
+				"expected_result": "Nothing has changed",
+				"data": ""
+			}]
+		}, {
+			"id": 131,
+			"title": "Discuss Feedback with missing all information",
+			"description": null,
+			"preconditions": "1. Open MeetMe application\n2. Executed on: iPhone XR, IOS version: 15",
+			"postconditions": null,
+			"priority": "medium",
+			"severity": "undefined",
+			"behavior": "positive",
+			"type": "functional",
+			"layer": "unknown",
+			"is_flaky": "no",
+			"automation": "is-not-automated",
+			"status": "actual",
+			"milestone": null,
+			"custom_fields": [],
+			"steps": [{
+				"position": 1,
+				"action": "Tap on the \"Feedback\" button",
+				"expected_result": "It shows up Feedback window",
+				"data": ""
+			}, {
+				"position": 2,
+				"action": "From the drop-down menu tap on Discuss",
+				"expected_result": "",
+				"data": ""
+			}, {
+				"position": 3,
+				"action": "Tap on submit without email and feedback information",
+				"expected_result": "It sows up message \"please provide details\"",
+				"data": ""
+			}]
+		}, {
+			"id": 133,
+			"title": "Star level account",
+			"description": "User can see Star level awards",
+			"preconditions": "1. Registered user\n2. Open MeetMe application\n3. Tap the \"Me\" button\n4. Executed on: iPhone XR, IOS version: 15",
+			"postconditions": null,
+			"priority": "medium",
+			"severity": "undefined",
+			"behavior": "undefined",
+			"type": "functional",
+			"layer": "unknown",
+			"is_flaky": "no",
+			"automation": "is-not-automated",
+			"status": "actual",
+			"milestone": null,
+			"custom_fields": [],
+			"steps": [{
+				"position": 1,
+				"action": "Tap the Level button",
+				"expected_result": "User is redirected to a Level page",
+				"data": ""
+			}, {
+				"position": 2,
+				"action": "Tap the Star Unlockables",
+				"expected_result": "User is redirected to Star awards",
+				"data": ""
+			}]
+		}, {
+			"id": 132,
+			"title": "Superstar level account",
+			"description": "User can see Superstar level awards",
+			"preconditions": "1. Registered user\n2. Open MeetMe application \n3. Tap the \"Me\" button\n4. Executed on: iPhone XR, IOS version: 15",
+			"postconditions": null,
+			"priority": "medium",
+			"severity": "undefined",
+			"behavior": "positive",
+			"type": "functional",
+			"layer": "unknown",
+			"is_flaky": "no",
+			"automation": "is-not-automated",
+			"status": "actual",
+			"milestone": null,
+			"custom_fields": [],
+			"steps": [{
+				"position": 1,
+				"action": "Tap the \"Level\" button",
+				"expected_result": "User is redirected to a Level page",
+				"data": ""
+			}, {
+				"position": 2,
+				"action": "Tap the Superstar Unlockables",
+				"expected_result": "User is redirected to Superstar awards",
+				"data": ""
+			}]
+		}, {
+			"id": 134,
+			"title": "Champion level account",
+			"description": null,
+			"preconditions": "1. Registered user\n2. Open MeetMe application\n3. Tap the \"Me\" button\n4. Executed on: iPhone XR, IOS version: 15",
+			"postconditions": null,
+			"priority": "medium",
+			"severity": "undefined",
+			"behavior": "undefined",
+			"type": "other",
+			"layer": "unknown",
+			"is_flaky": "no",
+			"automation": "is-not-automated",
+			"status": "actual",
+			"milestone": null,
+			"custom_fields": [],
+			"steps": [{
+				"position": 1,
+				"action": "Tap the \"Level\"",
+				"expected_result": "User is redirected to a Level page",
+				"data": ""
+			}, {
+				"position": 2,
+				"action": "Tap on Champion Unlockables",
+				"expected_result": "User is redirected to Champion awards",
+				"data": ""
+			}]
+		}, {
+			"id": 135,
+			"title": "Champion II level account",
+			"description": "User can see Champion II level awards",
+			"preconditions": "1. Registered user\n2. Open MeetMe application\n3. Tap the \"Me\" button\n4. Executed on: iPhone XR, IOS version: 15",
+			"postconditions": null,
+			"priority": "medium",
+			"severity": "undefined",
+			"behavior": "positive",
+			"type": "functional",
+			"layer": "unknown",
+			"is_flaky": "no",
+			"automation": "is-not-automated",
+			"status": "actual",
+			"milestone": null,
+			"custom_fields": [],
+			"steps": [{
+				"position": 1,
+				"action": "Tap the \"Level\" button",
+				"expected_result": "User is redirected to a Level page",
+				"data": ""
+			}, {
+				"position": 2,
+				"action": "Tap the Champion II Unlockables",
+				"expected_result": "User is redirected to Champion II awards",
+				"data": ""
+			}]
+		}, {
+			"id": 136,
+			"title": "Champion III level account",
+			"description": "User can see Champion III level awards",
+			"preconditions": "1. Registered user\n2. Open MeetMe application\n3. Tap the \"Me\" button\n4. Executed on: iPhone XR, IOS version: 15",
+			"postconditions": null,
+			"priority": "medium",
+			"severity": "undefined",
+			"behavior": "positive",
+			"type": "functional",
+			"layer": "unknown",
+			"is_flaky": "no",
+			"automation": "is-not-automated",
+			"status": "actual",
+			"milestone": null,
+			"custom_fields": [],
+			"steps": [{
+				"position": 1,
+				"action": "Tap the \"Level\" button",
+				"expected_result": "User is redirected to a Level page",
+				"data": ""
+			}, {
+				"position": 2,
+				"action": "Tap the Champion III Unlockables",
+				"expected_result": "User is redirected to Champion III awards",
+				"data": ""
+			}]
+		}, {
+			"id": 137,
+			"title": "Champion IV level account",
+			"description": "User can see Champion IV level awards",
+			"preconditions": "1. Registered user\n2. Open MeetMe application\n3. Tap the \"Me\" button\n4. Executed on: iPhone XR, IOS version: 15",
+			"postconditions": null,
+			"priority": "medium",
+			"severity": "undefined",
+			"behavior": "positive",
+			"type": "functional",
+			"layer": "unknown",
+			"is_flaky": "no",
+			"automation": "is-not-automated",
+			"status": "actual",
+			"milestone": null,
+			"custom_fields": [],
+			"steps": [{
+				"position": 1,
+				"action": "Tap the \"Level\" button",
+				"expected_result": "User is redirected to a Level page",
+				"data": ""
+			}, {
+				"position": 2,
+				"action": "Tap on Champion IV Unlockables",
+				"expected_result": "User is redirected to Champion IV awards",
+				"data": ""
+			}]
+		}, {
+			"id": 138,
+			"title": "Champion V level account",
+			"description": "User can see Champion V level awards",
+			"preconditions": "1. Registered user\n2. Open MeetMe application\n3. Tap the \"Me\" button\n4. Executed on: iPhone XR, IOS version: 15",
+			"postconditions": null,
+			"priority": "medium",
+			"severity": "undefined",
+			"behavior": "positive",
+			"type": "functional",
+			"layer": "unknown",
+			"is_flaky": "no",
+			"automation": "is-not-automated",
+			"status": "actual",
+			"milestone": null,
+			"custom_fields": [],
+			"steps": [{
+				"position": 1,
+				"action": "Tap the \"Level\" button",
+				"expected_result": "User is redirected to a Level page",
+				"data": ""
+			}, {
+				"position": 2,
+				"action": "Tap on Champion V Unlockables",
+				"expected_result": "User is redirected to Champion V awards",
+				"data": ""
+			}]
+		}, {
+			"id": 139,
+			"title": "User level",
+			"description": "User can see profile level in MeetMe",
+			"preconditions": "1. Registered user\n2. Open MeetMe application\n3. Tap the \"Me\" button\n4. Executed on: iPhone XR, IOS version: 15",
+			"postconditions": null,
+			"priority": "medium",
+			"severity": "undefined",
+			"behavior": "positive",
+			"type": "functional",
+			"layer": "unknown",
+			"is_flaky": "no",
+			"automation": "is-not-automated",
+			"status": "actual",
+			"milestone": null,
+			"custom_fields": [],
+			"steps": [{
+				"position": 1,
+				"action": "Tap the \"Level\" button",
+				"expected_result": "User is redirected to a Level page",
+				"data": ""
+			}]
+		}, {
+			"id": 140,
+			"title": "Rookie level account",
+			"description": "User can see rookie awards",
+			"preconditions": "1. Registered user\n2. Open MeetMe application\n3. Tap the \"Me\" button\n4. Executed on: iPhone XR, IOS version: 15",
+			"postconditions": null,
+			"priority": "medium",
+			"severity": "undefined",
+			"behavior": "positive",
+			"type": "functional",
+			"layer": "unknown",
+			"is_flaky": "no",
+			"automation": "is-not-automated",
+			"status": "actual",
+			"milestone": null,
+			"custom_fields": [],
+			"steps": [{
+				"position": 1,
+				"action": "Tap the \"Level\" button",
+				"expected_result": "User is redirected to a Level page",
+				"data": ""
+			}, {
+				"position": 2,
+				"action": "Tap the Rookie Unlockables",
+				"expected_result": "User is redirected to Rookie awards",
+				"data": ""
+			}]
+		}, {
+			"id": 141,
+			"title": "Pro level account",
+			"description": "User can see Pro awards",
+			"preconditions": "1. Registered user\n2. Open MeetMe application\n3. Tap the \"Me\" button\n4. Executed on: iPhone XR, IOS version: 15",
+			"postconditions": null,
+			"priority": "medium",
+			"severity": "undefined",
+			"behavior": "positive",
+			"type": "functional",
+			"layer": "unknown",
+			"is_flaky": "no",
+			"automation": "is-not-automated",
+			"status": "actual",
+			"milestone": null,
+			"custom_fields": [],
+			"steps": [{
+				"position": 1,
+				"action": "Tap the \"Level\" button",
+				"expected_result": "User is redirected to a Level page",
+				"data": ""
+			}, {
+				"position": 2,
+				"action": "Tap the Pro Unlockables",
+				"expected_result": "User is redirected to Pro awards",
+				"data": ""
+			}]
+		}, {
+			"id": 142,
+			"title": "Elite level account",
+			"description": "User can see Elite level awards",
+			"preconditions": "1. Registered user\n2. Open MeetMe application\n3. Tap the \"Me\" button\n4. Executed on: iPhone XR, IOS version: 15",
+			"postconditions": null,
+			"priority": "medium",
+			"severity": "undefined",
+			"behavior": "positive",
+			"type": "functional",
+			"layer": "unknown",
+			"is_flaky": "no",
+			"automation": "is-not-automated",
+			"status": "actual",
+			"milestone": null,
+			"custom_fields": [],
+			"steps": [{
+				"position": 1,
+				"action": "Tap the \"Level\" button",
+				"expected_result": "User is redirected to a Level page",
+				"data": ""
+			}, {
+				"position": 2,
+				"action": "Tap the Elite Unlockables",
+				"expected_result": "User is redirected to Elite awards",
+				"data": ""
+			}]
+		}, {
+			"id": 143,
+			"title": "MVP level account",
+			"description": "User can see MVP level awards",
+			"preconditions": "1. Registered user\n2. Open MeetMe application\n3. Tap the \"Me\" button\n4. Executed on: iPhone XR, IOS version: 15",
+			"postconditions": null,
+			"priority": "medium",
+			"severity": "undefined",
+			"behavior": "positive",
+			"type": "functional",
+			"layer": "unknown",
+			"is_flaky": "no",
+			"automation": "is-not-automated",
+			"status": "actual",
+			"milestone": null,
+			"custom_fields": [],
+			"steps": [{
+				"position": 1,
+				"action": "Tap the \"Level\" button",
+				"expected_result": "User is redirected to a Level page",
+				"data": ""
+			}, {
+				"position": 2,
+				"action": "Tap the MVP Unlockables",
+				"expected_result": "User is redirected to MVP awards",
+				"data": ""
+			}]
+		}, {
+			"id": 144,
+			"title": "Legend level account",
+			"description": "User can see Legend level awards",
+			"preconditions": "1. Registered user\n2. Open MeetMe application\n3. Tap the \"Me\" button\n4. Executed on: iPhone XR, IOS version: 15",
+			"postconditions": null,
+			"priority": "medium",
+			"severity": "undefined",
+			"behavior": "positive",
+			"type": "functional",
+			"layer": "unknown",
+			"is_flaky": "no",
+			"automation": "is-not-automated",
+			"status": "actual",
+			"milestone": null,
+			"custom_fields": [],
+			"steps": [{
+				"position": 1,
+				"action": "Tap the \"Level\" button",
+				"expected_result": "User is redirected to a Level page",
+				"data": ""
+			}, {
+				"position": 2,
+				"action": "Tap the Legend Unlockables",
+				"expected_result": "User is redirected to Legend awards",
+				"data": ""
+			}]
+		}, {
+			"id": 145,
+			"title": "Baller level account",
+			"description": "User can see Baller level awards",
+			"preconditions": "1. Registered user\n2. Open MeetMe application\n3. Tap the \"Me\" button\n4. Executed on: iPhone XR, IOS version: 15",
+			"postconditions": null,
+			"priority": "medium",
+			"severity": "undefined",
+			"behavior": "positive",
+			"type": "functional",
+			"layer": "unknown",
+			"is_flaky": "no",
+			"automation": "is-not-automated",
+			"status": "actual",
+			"milestone": null,
+			"custom_fields": [],
+			"steps": [{
+				"position": 1,
+				"action": "Tap the \"Level\" button",
+				"expected_result": "User is redirected to a Level page",
+				"data": ""
+			}, {
+				"position": 2,
+				"action": "Tap the Baller Unlockables",
+				"expected_result": "User is redirected to Baller awards",
+				"data": ""
+			}]
+		}, {
+			"id": 146,
+			"title": "Executive level account",
+			"description": "User can see Executive level awards",
+			"preconditions": "1. Registered user\n2. Open MeetMe application\n3. Tap the \"Me\" button\n4. Executed on: iPhone XR, IOS version: 15",
+			"postconditions": null,
+			"priority": "medium",
+			"severity": "undefined",
+			"behavior": "positive",
+			"type": "other",
+			"layer": "unknown",
+			"is_flaky": "no",
+			"automation": "is-not-automated",
+			"status": "actual",
+			"milestone": null,
+			"custom_fields": [],
+			"steps": [{
+				"position": 1,
+				"action": "Tap the \"Level\" button",
+				"expected_result": "User is redirected to a Level page",
+				"data": ""
+			}, {
+				"position": 2,
+				"action": "Tap the Executive Unlockables",
+				"expected_result": "User is redirected to Executive awards",
+				"data": ""
+			}]
+		}, {
+			"id": 147,
+			"title": "Celebrity level account",
+			"description": "User can see Celebrity level awards",
+			"preconditions": "1. Registered user\n2. Open MeetMe application\n3. Tap the \"Me\" button\n4. Executed on: iPhone XR, IOS version: 15",
+			"postconditions": null,
+			"priority": "medium",
+			"severity": "undefined",
+			"behavior": "positive",
+			"type": "functional",
+			"layer": "unknown",
+			"is_flaky": "no",
+			"automation": "is-not-automated",
+			"status": "actual",
+			"milestone": null,
+			"custom_fields": [],
+			"steps": [{
+				"position": 1,
+				"action": "Tap the \"Level\" button",
+				"expected_result": "User is redirected to a Level page",
+				"data": ""
+			}, {
+				"position": 2,
+				"action": "Tap on Celebrity Unlockables",
+				"expected_result": "User is redirected to Celebrity awards",
+				"data": ""
+			}]
+		}, {
+			"id": 148,
+			"title": "Location filters - cyrillic alphabet",
+			"description": "User can not set a location filter in cyrillic alphabet to find people on that location",
+			"preconditions": "1. Registered user\n2. Open MeetMe application\n3. Executed on: iPhone XR, IOS version: 15",
+			"postconditions": null,
+			"priority": "medium",
+			"severity": "undefined",
+			"behavior": "positive",
+			"type": "functional",
+			"layer": "unknown",
+			"is_flaky": "no",
+			"automation": "is-not-automated",
+			"status": "actual",
+			"milestone": null,
+			"custom_fields": [],
+			"steps": [{
+				"position": 1,
+				"action": "Tap the Locals",
+				"expected_result": "User is redirected to list with local peoples",
+				"data": ""
+			}, {
+				"position": 2,
+				"action": "Tap the Filters button on the top right corner",
+				"expected_result": "User is redirected to the search filters",
+				"data": ""
+			}, {
+				"position": 3,
+				"action": "Tap the Location and write \"\u041c\u0435\u043b\u043d\u0438\u043a\"",
+				"expected_result": "At first the text field accepted \"\u041c\u0435\u043b\u043d\u0438\u043a\"",
+				"data": ""
+			}, {
+				"position": 4,
+				"action": "Tap the go back button and go back to filters",
+				"expected_result": "The location is changed to Georgia",
+				"data": ""
+			}]
+		}]
+	}, {
+		"id": 4,
+		"title": "Battery",
+		"description": null,
+		"preconditions": null,
+		"suites": [],
+		"cases": [{
+			"id": 16,
+			"title": "Low Battery",
+			"description": "User should be able to see the alert when the battery is low",
+			"preconditions": "1. Click on the app and open it\n2. Executed on: iPhone XR, IOS version: 15",
+			"postconditions": null,
+			"priority": "high",
+			"severity": "undefined",
+			"behavior": "positive",
+			"type": "functional",
+			"layer": "unknown",
+			"is_flaky": "no",
+			"automation": "is-not-automated",
+			"status": "actual",
+			"milestone": null,
+			"custom_fields": [],
+			"steps": [{
+				"position": 1,
+				"action": "Use the application till you get the low battery indication",
+				"expected_result": "When battery is low the alert should display",
+				"data": ""
+			}]
+		}, {
+			"id": 79,
+			"title": "Application is still running after Energy Saving mode",
+			"description": null,
+			"preconditions": "1. Battery level is under 20%\n2. Start Energy Saving Mode\n3. Executed on: iPhone XR, IOS version: 15",
+			"postconditions": null,
+			"priority": "undefined",
+			"severity": "normal",
+			"behavior": "undefined",
+			"type": "other",
+			"layer": "unknown",
+			"is_flaky": "no",
+			"automation": "is-not-automated",
+			"status": "actual",
+			"milestone": null,
+			"custom_fields": [],
+			"steps": [{
+				"position": 1,
+				"action": "Launch MeetMe application",
+				"expected_result": "Application is run and working normally",
+				"data": ""
+			}]
+		}, {
+			"id": 17,
+			"title": "Battery Consumption",
+			"description": "Verify that the app should not consume more battery",
+			"preconditions": "1. Full charge your device\n2. Click on the app and open it\n3. Executed on: iPhone XR, IOS version: 15",
+			"postconditions": null,
+			"priority": "high",
+			"severity": "undefined",
+			"behavior": "positive",
+			"type": "functional",
+			"layer": "unknown",
+			"is_flaky": "no",
+			"automation": "is-not-automated",
+			"status": "actual",
+			"milestone": null,
+			"custom_fields": [],
+			"steps": [{
+				"position": 1,
+				"action": "Use the application and verify the status of the battery in 15 mins intervals of time",
+				"expected_result": "The application should not consume more battery",
+				"data": ""
+			}]
+		}, {
+			"id": 18,
+			"title": "Charge",
+			"description": "Verify that the app should run when inserting the charger",
+			"preconditions": "1. Click on the app and open it.\n2. Executed on: iPhone XR, IOS version: 15",
+			"postconditions": null,
+			"priority": "high",
+			"severity": "normal",
+			"behavior": "undefined",
+			"type": "functional",
+			"layer": "unknown",
+			"is_flaky": "no",
+			"automation": "is-not-automated",
+			"status": "actual",
+			"milestone": null,
+			"custom_fields": [],
+			"steps": [{
+				"position": 1,
+				"action": "Insert the charging pin in between the running of the application and verify",
+				"expected_result": "The app should run when inserting the charger",
+				"data": ""
+			}]
+		}]
+	}, {
+		"id": 5,
+		"title": "Profil",
+		"description": null,
+		"preconditions": null,
+		"suites": [],
+		"cases": [{
+			"id": 63,
+			"title": "Buy Diamonds",
+			"description": "Test that, the user can buy diamonds",
+			"preconditions": "1. User has paid card in bank account\n2. Registered user\n3. Open MeetMe application\n4. Executed on: iPhone XR, IOS version: 15",
+			"postconditions": null,
+			"priority": "medium",
+			"severity": "undefined",
+			"behavior": "positive",
+			"type": "functional",
+			"layer": "unknown",
+			"is_flaky": "no",
+			"automation": "is-not-automated",
+			"status": "actual",
+			"milestone": null,
+			"custom_fields": [],
+			"steps": [{
+				"position": 1,
+				"action": "Tap the \u201cCredits\u201c button",
+				"expected_result": "The \u201cGet Credits\u201c page is opened",
+				"data": ""
+			}, {
+				"position": 2,
+				"action": "Tap the \u201cDiamonds\u201c button",
+				"expected_result": "Options for diamonds are loaded",
+				"data": ""
+			}, {
+				"position": 3,
+				"action": "Tap the \u201cClaim Cash Reward\u201c",
+				"expected_result": "Kinds of packages are loaded",
+				"data": ""
+			}, {
+				"position": 4,
+				"action": "Tap the \u201c$200\u201c button",
+				"expected_result": "The page for paying is loaded",
+				"data": ""
+			}, {
+				"position": 5,
+				"action": "Tap the \u201c\u041a\u0443\u043f\u0435\u0442\u0435\u201c button",
+				"expected_result": "The package with diamonds is b\u043eught",
+				"data": ""
+			}]
+		}, {
+			"id": 19,
+			"title": "Change profile photo with a no human face on it",
+			"description": "User cannot set a profile photo without a no human face on it",
+			"preconditions": "1. Click on the app and open it\n2. Click the button \"Me\"\n3. Executed on: iPhone XR, IOS version: 15",
+			"postconditions": null,
+			"priority": "high",
+			"severity": "undefined",
+			"behavior": "undefined",
+			"type": "functional",
+			"layer": "unknown",
+			"is_flaky": "no",
+			"automation": "is-not-automated",
+			"status": "actual",
+			"milestone": null,
+			"custom_fields": [],
+			"steps": [{
+				"position": 1,
+				"action": "Tap on photo that is no human face on it",
+				"expected_result": "The photo is opened",
+				"data": ""
+			}, {
+				"position": 2,
+				"action": "Tap on \"Options\" button on the top right corner",
+				"expected_result": "It shows up a message \"You shoulds\nhow your face\"",
+				"data": ""
+			}]
+		}, {
+			"id": 41,
+			"title": "User can buy \"Boost\"",
+			"description": "Test that, the user can buy boost tokens",
+			"preconditions": "1. Registered user\n2. Open MeetMe application\n3. Executed on: iPhone XR, IOS version: 15",
+			"postconditions": null,
+			"priority": "high",
+			"severity": "undefined",
+			"behavior": "positive",
+			"type": "functional",
+			"layer": "unknown",
+			"is_flaky": "no",
+			"automation": "is-not-automated",
+			"status": "actual",
+			"milestone": null,
+			"custom_fields": [],
+			"steps": [{
+				"position": 1,
+				"action": "Tap the \"Boost\" button",
+				"expected_result": "The user can buy successfully tokens",
+				"data": ""
+			}]
+		}, {
+			"id": 39,
+			"title": "User can see all photos of any person",
+			"description": "User can see all shared photos of any person",
+			"preconditions": "1. Registered user\n2. Open MeetMe application\n3. Executed on: iPhone XR, IOS version: 15",
+			"postconditions": null,
+			"priority": "medium",
+			"severity": "undefined",
+			"behavior": "positive",
+			"type": "functional",
+			"layer": "unknown",
+			"is_flaky": "no",
+			"automation": "is-not-automated",
+			"status": "actual",
+			"milestone": null,
+			"custom_fields": [],
+			"steps": [{
+				"position": 1,
+				"action": "Tap the main photo of the profile",
+				"expected_result": "Page with all photos is opened",
+				"data": ""
+			}, {
+				"position": 2,
+				"action": "Swipe left or right",
+				"expected_result": "The user successfully considered all photos in the profile",
+				"data": ""
+			}]
+		}, {
+			"id": 54,
+			"title": "Add more photos",
+			"description": "Test that user can add more than one photos",
+			"preconditions": "1. Registered user\n2. Open MeetMe application\n3. Executed on: iPhone XR, IOS version: 15",
+			"postconditions": null,
+			"priority": "medium",
+			"severity": "undefined",
+			"behavior": "positive",
+			"type": "functional",
+			"layer": "unknown",
+			"is_flaky": "no",
+			"automation": "is-not-automated",
+			"status": "actual",
+			"milestone": null,
+			"custom_fields": [],
+			"steps": [{
+				"position": 1,
+				"action": "Tap the \u201cAdd photo\u201c button",
+				"expected_result": "Library with photos in phone is opened",
+				"data": ""
+			}, {
+				"position": 2,
+				"action": "Choose wanted photo",
+				"expected_result": "The photo is market in blue frame",
+				"data": ""
+			}, {
+				"position": 3,
+				"action": "Tap the \u201cDone\u201c button",
+				"expected_result": "The photo is uploaded",
+				"data": ""
+			}]
+		}, {
+			"id": 55,
+			"title": "Delete photos",
+			"description": "Test that user can delete photos from uploaded already",
+			"preconditions": "1. Registered user\n2. Open MeetMe application\n3. Executed on: iPhone XR, IOS version: 15",
+			"postconditions": null,
+			"priority": "medium",
+			"severity": "undefined",
+			"behavior": "positive",
+			"type": "functional",
+			"layer": "unknown",
+			"is_flaky": "no",
+			"automation": "is-not-automated",
+			"status": "actual",
+			"milestone": null,
+			"custom_fields": [],
+			"steps": [{
+				"position": 1,
+				"action": "Tap the photo wich want to delete",
+				"expected_result": "Photo is opened",
+				"data": ""
+			}, {
+				"position": 2,
+				"action": "Tap the \"...\" button",
+				"expected_result": "Additional options are opened",
+				"data": ""
+			}, {
+				"position": 3,
+				"action": "Tap the \u201cDelete Photo\u201c",
+				"expected_result": "The system is asking for confirmation deleting",
+				"data": ""
+			}, {
+				"position": 4,
+				"action": "Tap the \u201cDELETE\u201c button",
+				"expected_result": "The photo is deleted",
+				"data": ""
+			}]
+		}, {
+			"id": 57,
+			"title": "Remove profile from Friends list",
+			"description": "Test that, the user can remove any profile from Friends list",
+			"preconditions": "1. Registered user\n2. Open MeetMe application\n3. Tap the \"Me\" button\n4. Executed on: iPhone XR, IOS version: 15",
+			"postconditions": null,
+			"priority": "medium",
+			"severity": "undefined",
+			"behavior": "positive",
+			"type": "other",
+			"layer": "unknown",
+			"is_flaky": "no",
+			"automation": "is-not-automated",
+			"status": "actual",
+			"milestone": null,
+			"custom_fields": [],
+			"steps": [{
+				"position": 1,
+				"action": "Tap the \u201cFriends\u201c button",
+				"expected_result": "The Friends list is opened",
+				"data": ""
+			}, {
+				"position": 2,
+				"action": "Tap and hold over some profile",
+				"expected_result": "The \u201cDelete\u201c button is visible",
+				"data": ""
+			}, {
+				"position": 3,
+				"action": "Tap the \u201cDelete\u201c button",
+				"expected_result": "The system is asking for confirmation removing",
+				"data": ""
+			}, {
+				"position": 4,
+				"action": "Tap the \u201cYes\u201c button",
+				"expected_result": "The profile is removed from the favorites list",
+				"data": ""
+			}]
+		}, {
+			"id": 59,
+			"title": "Delete account",
+			"description": "Test that user can delete his account",
+			"preconditions": "1. Registered user\n2. Open MeetMe application\n3. Tap the \"Tap\" button\n4. Executed on: iPhone XR, IOS version: 15",
+			"postconditions": null,
+			"priority": "medium",
+			"severity": "undefined",
+			"behavior": "positive",
+			"type": "functional",
+			"layer": "unknown",
+			"is_flaky": "no",
+			"automation": "is-not-automated",
+			"status": "actual",
+			"milestone": null,
+			"custom_fields": [],
+			"steps": [{
+				"position": 1,
+				"action": "Tap the \u201cSettings\u201c button",
+				"expected_result": "The \u201cSettings\u201c page is loaded",
+				"data": ""
+			}, {
+				"position": 2,
+				"action": "Tap the \u201cDelete account\u201c button",
+				"expected_result": "The system is asking for confirmation to delete",
+				"data": ""
+			}, {
+				"position": 3,
+				"action": "Tap the \u201cYes\u201c button",
+				"expected_result": "Form with Email and Passwords is loaded",
+				"data": ""
+			}, {
+				"position": 4,
+				"action": "Insert valid data about the account",
+				"expected_result": "Fields are filled",
+				"data": ""
+			}, {
+				"position": 5,
+				"action": "Tap the \u201cDELETE ACCOUNT\u201c field",
+				"expected_result": "Account is deleted",
+				"data": ""
+			}]
+		}, {
+			"id": 60,
+			"title": "Edit profile information",
+			"description": "Test that user can edit profile information like Last name or Name",
+			"preconditions": "1. Registered user\n2. Open MeetMe application\n3. Tap the \"Me\" button\n4. Executed on: iPhone XR, IOS version: 15",
+			"postconditions": null,
+			"priority": "medium",
+			"severity": "undefined",
+			"behavior": "positive",
+			"type": "functional",
+			"layer": "unknown",
+			"is_flaky": "no",
+			"automation": "is-not-automated",
+			"status": "actual",
+			"milestone": null,
+			"custom_fields": [],
+			"steps": [{
+				"position": 1,
+				"action": "Tap the \u201cVIEW\u201c button",
+				"expected_result": "The user\u2019s profile is loaded",
+				"data": ""
+			}, {
+				"position": 2,
+				"action": "Tap the \u201cEdit\u201c button",
+				"expected_result": "The Edit Profile menu is loaded",
+				"data": ""
+			}, {
+				"position": 3,
+				"action": "Tap the \u201cLast Name\u201c field",
+				"expected_result": "Keyboard is visible",
+				"data": ""
+			}, {
+				"position": 4,
+				"action": "Insert the Last Name",
+				"expected_result": "Field is filled",
+				"data": ""
+			}, {
+				"position": 5,
+				"action": "Tap the \u201cBack\u201c button",
+				"expected_result": "Last name is changed",
+				"data": ""
+			}]
+		}, {
+			"id": 61,
+			"title": "Add details abour profile",
+			"description": "Test that user can add more details about the profile",
+			"preconditions": "1. Registered user\n2. Open MeetMe application\n3. Tap the \"Me\" button\n4. Executed on: iPhone XR, IOS version: 15",
+			"postconditions": null,
+			"priority": "medium",
+			"severity": "undefined",
+			"behavior": "undefined",
+			"type": "other",
+			"layer": "unknown",
+			"is_flaky": "no",
+			"automation": "is-not-automated",
+			"status": "actual",
+			"milestone": null,
+			"custom_fields": [],
+			"steps": [{
+				"position": 1,
+				"action": "Tap the \u201cVIEW\u201c button",
+				"expected_result": "The user\u2019s profile is loaded",
+				"data": ""
+			}, {
+				"position": 2,
+				"action": "Tap the \u201cEdit\u201c button",
+				"expected_result": "The Edit Profile menu is loaded",
+				"data": ""
+			}, {
+				"position": 3,
+				"action": "Tap the \u201cDETAILS\u201c field",
+				"expected_result": "Details are loaded",
+				"data": ""
+			}, {
+				"position": 4,
+				"action": "Tap the \u201cHeight\u201c field",
+				"expected_result": "Form about Height is loaded",
+				"data": ""
+			}, {
+				"position": 5,
+				"action": "Choose the height and tap the \u201cBack \u201c button",
+				"expected_result": "Height is setted",
+				"data": ""
+			}]
+		}, {
+			"id": 56,
+			"title": "Who viewed me - Views",
+			"description": "Test that, the user can check who viewed his profile",
+			"preconditions": "1. Registered user\n2. Open MeetMe application\n3. Executed on: iPhone XR, IOS version: 15",
+			"postconditions": null,
+			"priority": "low",
+			"severity": "undefined",
+			"behavior": "positive",
+			"type": "functional",
+			"layer": "unknown",
+			"is_flaky": "no",
+			"automation": "is-not-automated",
+			"status": "actual",
+			"milestone": null,
+			"custom_fields": [],
+			"steps": [{
+				"position": 1,
+				"action": "Tap the \"Me\" button",
+				"expected_result": "Open page successfully",
+				"data": ""
+			}, {
+				"position": 2,
+				"action": "Tap the \u201cViews\u201c button",
+				"expected_result": "Profiles who viewed the user\u2019s profile is loaded",
+				"data": ""
+			}]
+		}, {
+			"id": 58,
+			"title": "Look notifications",
+			"description": "Test that , the user can see notifications",
+			"preconditions": "1. Registered user\n2. Open MeetMe application\n3. Tap the \"Me\" button\n4. Executed on: iPhone XR, IOS version: 15",
+			"postconditions": null,
+			"priority": "low",
+			"severity": "undefined",
+			"behavior": "positive",
+			"type": "functional",
+			"layer": "unknown",
+			"is_flaky": "no",
+			"automation": "is-not-automated",
+			"status": "actual",
+			"milestone": null,
+			"custom_fields": [],
+			"steps": [{
+				"position": 1,
+				"action": "Tap the \u201cNotifications\u201c button",
+				"expected_result": "Shows all available notifications successfully",
+				"data": ""
+			}]
+		}, {
+			"id": 62,
+			"title": "Make profile link",
+			"description": "Test that user can make profile link like get a username",
+			"preconditions": "1. Registered user\n2. Open MeetMe application\n3. Tap the \"Me\" button\n4. Executed on: iPhone XR, IOS version: 15",
+			"postconditions": null,
+			"priority": "medium",
+			"severity": "undefined",
+			"behavior": "positive",
+			"type": "functional",
+			"layer": "unknown",
+			"is_flaky": "no",
+			"automation": "is-not-automated",
+			"status": "actual",
+			"milestone": null,
+			"custom_fields": [],
+			"steps": [{
+				"position": 1,
+				"action": "Tap the \u201cVIEW\u201c button",
+				"expected_result": "The user\u2019s profile is loaded",
+				"data": ""
+			}, {
+				"position": 2,
+				"action": "Tap the \u201cEdit\u201c button",
+				"expected_result": "The Edit Profile menu is loaded",
+				"data": ""
+			}, {
+				"position": 3,
+				"action": "Tap the \u201cGet One!\u201c field",
+				"expected_result": "Form about Username is loaded",
+				"data": ""
+			}, {
+				"position": 4,
+				"action": "Insert new username",
+				"expected_result": "Field is filled",
+				"data": ""
+			}, {
+				"position": 5,
+				"action": "Tap the \u201cClaim\u201c photos",
+				"expected_result": "Username is set",
+				"data": ""
+			}, {
+				"position": 6,
+				"action": "Tap the \u201cBack\u201c button",
+				"expected_result": "The user can share a link to his profile",
+				"data": ""
+			}]
+		}, {
+			"id": 65,
+			"title": "Remove profile from friends list",
+			"description": "Test that, the user can remove any profile from the friends list",
+			"preconditions": "1. Registered user\n2. Open MeetMe application\n3. .Tap the \"Me\" button\n4. Executed on: iPhone XR, IOS version: 15",
+			"postconditions": null,
+			"priority": "medium",
+			"severity": "undefined",
+			"behavior": "positive",
+			"type": "functional",
+			"layer": "unknown",
+			"is_flaky": "no",
+			"automation": "is-not-automated",
+			"status": "actual",
+			"milestone": null,
+			"custom_fields": [],
+			"steps": [{
+				"position": 1,
+				"action": "Tap the \u201cFriends\u201c button",
+				"expected_result": "The Favorites list is opened",
+				"data": ""
+			}, {
+				"position": 2,
+				"action": "Tap and hold over some profile",
+				"expected_result": "The \u201cDelete\u201c button is visible",
+				"data": ""
+			}, {
+				"position": 3,
+				"action": "Tap the \u201cDelete\u201c button",
+				"expected_result": "The system is asking for confirmation removing",
+				"data": ""
+			}, {
+				"position": 4,
+				"action": "Tap the \u201cYES\u201c button",
+				"expected_result": "The profile is removed from the favorites list",
+				"data": ""
+			}]
+		}, {
+			"id": 70,
+			"title": "Dislike in Match page",
+			"description": "Test that, the user can dislike some profile in Match page",
+			"preconditions": "1. Registered user\n2. Open MeetMe application\n3. Tap the \"Match\" button\n4. Executed on: iPhone XR, IOS version: 15\n\n\n<br>\n<br>",
+			"postconditions": null,
+			"priority": "medium",
+			"severity": "undefined",
+			"behavior": "positive",
+			"type": "functional",
+			"layer": "unknown",
+			"is_flaky": "no",
+			"automation": "is-not-automated",
+			"status": "actual",
+			"milestone": null,
+			"custom_fields": [],
+			"steps": [{
+				"position": 1,
+				"action": "Tap the \u201cDislike\u201c button",
+				"expected_result": "The profile is disliked and there is a new profile",
+				"data": ""
+			}]
+		}, {
+			"id": 87,
+			"title": "Filter streams by language",
+			"description": "Testing that the user can filter streams by the language of the streamer",
+			"preconditions": "1. Registered user\n2. Open MeetMe application\n3. Tap the \u201cLive\u201c button\n4. Executed on: iPhone XR, IOS version: 15",
+			"postconditions": null,
+			"priority": "medium",
+			"severity": "undefined",
+			"behavior": "positive",
+			"type": "functional",
+			"layer": "unknown",
+			"is_flaky": "no",
+			"automation": "is-not-automated",
+			"status": "actual",
+			"milestone": null,
+			"custom_fields": [],
+			"steps": [{
+				"position": 1,
+				"action": "Tap the \u201cFilter\u201c button",
+				"expected_result": "The filter page is open",
+				"data": ""
+			}, {
+				"position": 2,
+				"action": "The filter page is open",
+				"expected_result": "The language page is loaded",
+				"data": ""
+			}, {
+				"position": 3,
+				"action": "Tap the \u201c\u0410\u043d\u0433\u043b\u0438\u0438\u0439\u0441\u043a\u0438",
+				"expected_result": "Checkbox is checked",
+				"data": ""
+			}, {
+				"position": 4,
+				"action": "Tap the \u201cSAVE\u201c button",
+				"expected_result": "Tap the \u201cSAVE\u201c button",
+				"data": ""
+			}, {
+				"position": 5,
+				"action": "Tap the \u201cSAVE\u201c button",
+				"expected_result": "Streams is showed according to set filter",
+				"data": ""
+			}]
+		}, {
+			"id": 88,
+			"title": "Filter streams by gender and interest",
+			"description": "Testing that the user can filter streams by gender of streamer and his interest",
+			"preconditions": "1. Registered user\n2. Open MeetMe application\n3. Tap the \u201cLive\u201c button\n4. Executed on: iPhone XR, IOS version: 15",
+			"postconditions": null,
+			"priority": "medium",
+			"severity": "undefined",
+			"behavior": "undefined",
+			"type": "functional",
+			"layer": "unknown",
+			"is_flaky": "no",
+			"automation": "is-not-automated",
+			"status": "actual",
+			"milestone": null,
+			"custom_fields": [],
+			"steps": [{
+				"position": 1,
+				"action": "Tap the \u201cFilter\u201c button",
+				"expected_result": "The filter page is open",
+				"data": ""
+			}, {
+				"position": 2,
+				"action": "The filter page is open",
+				"expected_result": "The filter page is open",
+				"data": ""
+			}, {
+				"position": 3,
+				"action": "Tap the \u201cSAVE\u201c button",
+				"expected_result": "Streams is showed according to set filter",
+				"data": ""
+			}]
+		}, {
+			"id": 95,
+			"title": "User can see \"New\" in Live",
+			"description": null,
+			"preconditions": "1. Registered user\n2. Open MeetMe application\n3. Tap the \"Live\" button\n4. Executed on: iPhone XR, IOS version: 15",
+			"postconditions": null,
+			"priority": "medium",
+			"severity": "undefined",
+			"behavior": "positive",
+			"type": "functional",
+			"layer": "unknown",
+			"is_flaky": "no",
+			"automation": "is-not-automated",
+			"status": "actual",
+			"milestone": null,
+			"custom_fields": [],
+			"steps": [{
+				"position": 1,
+				"action": "Click the \"NEW\" button",
+				"expected_result": "The \u201cNew\u201c page with all streaming videos is loaded",
+				"data": ""
+			}, {
+				"position": 2,
+				"action": "Tap the stream of the list",
+				"expected_result": "The menu with viewers is loaded",
+				"data": ""
+			}]
+		}, {
+			"id": 96,
+			"title": "User can see \"LEADERBOARDS\" in Live",
+			"description": null,
+			"preconditions": "1. Registered user\n2. Open MeetMe application\n3. Executed on: iPhone XR, IOS version: 15",
+			"postconditions": null,
+			"priority": "medium",
+			"severity": "undefined",
+			"behavior": "positive",
+			"type": "functional",
+			"layer": "unknown",
+			"is_flaky": "no",
+			"automation": "is-not-automated",
+			"status": "actual",
+			"milestone": null,
+			"custom_fields": [],
+			"steps": [{
+				"position": 1,
+				"action": "Tap the \"Live\" button",
+				"expected_result": "The \u201cLive\u201c page open successfully",
+				"data": ""
+			}, {
+				"position": 2,
+				"action": "Tap the \"LEADERBOARDS\" button",
+				"expected_result": "The user see who account have the most diamonds",
+				"data": ""
+			}]
+		}, {
+			"id": 97,
+			"title": "User can see \"Favorites\" in Live",
+			"description": null,
+			"preconditions": "1. Registered user\n2. Open MeetMe application\n3. Executed on: iPhone XR, IOS version: 15",
+			"postconditions": null,
+			"priority": "medium",
+			"severity": "undefined",
+			"behavior": "positive",
+			"type": "functional",
+			"layer": "unknown",
+			"is_flaky": "no",
+			"automation": "is-not-automated",
+			"status": "actual",
+			"milestone": null,
+			"custom_fields": [],
+			"steps": [{
+				"position": 1,
+				"action": "Tap the \"Live\" button",
+				"expected_result": "The \u201cLive\u201c page open successfully",
+				"data": ""
+			}, {
+				"position": 2,
+				"action": "Click the \"Favorites\" button",
+				"expected_result": "The user see the favorites people",
+				"data": ""
+			}]
+		}, {
+			"id": 98,
+			"title": "User can see \"DATE\" in Live",
+			"description": null,
+			"preconditions": "1. Registered user\n2. Open MeetMe application\n3. Executed on: iPhone XR, IOS version: 15",
+			"postconditions": null,
+			"priority": "medium",
+			"severity": "undefined",
+			"behavior": "positive",
+			"type": "functional",
+			"layer": "unknown",
+			"is_flaky": "no",
+			"automation": "is-not-automated",
+			"status": "actual",
+			"milestone": null,
+			"custom_fields": [],
+			"steps": [{
+				"position": 1,
+				"action": "Tap the \"Live\" button",
+				"expected_result": "The \u201cLive\u201c page open successfully",
+				"data": ""
+			}, {
+				"position": 2,
+				"action": "Tap the \"DATE\" button",
+				"expected_result": "The user saw other profiles successfully",
+				"data": ""
+			}]
+		}, {
+			"id": 99,
+			"title": "User can see \"LEADERBOARDS\" in Live",
+			"description": null,
+			"preconditions": "1. Registered user\n2. Open MeetMe application\n3. Executed on: iPhone XR, IOS version: 15",
+			"postconditions": null,
+			"priority": "medium",
+			"severity": "undefined",
+			"behavior": "positive",
+			"type": "functional",
+			"layer": "unknown",
+			"is_flaky": "no",
+			"automation": "is-not-automated",
+			"status": "actual",
+			"milestone": null,
+			"custom_fields": [],
+			"steps": [{
+				"position": 1,
+				"action": "Tap the \"Live\" button",
+				"expected_result": "The \u201cLive\u201c page open successfully",
+				"data": ""
+			}, {
+				"position": 2,
+				"action": "Tap the \"NEARBY\" button",
+				"expected_result": "The user have see nearby profils",
+				"data": ""
+			}]
+		}, {
+			"id": 100,
+			"title": "User can see \"TRENDING\" in Live",
+			"description": null,
+			"preconditions": "1. Registered user\n2. Open MeetMe application\n3. Executed on: iPhone XR, IOS version: 15",
+			"postconditions": null,
+			"priority": "medium",
+			"severity": "undefined",
+			"behavior": "positive",
+			"type": "functional",
+			"layer": "unknown",
+			"is_flaky": "no",
+			"automation": "is-not-automated",
+			"status": "actual",
+			"milestone": null,
+			"custom_fields": [],
+			"steps": [{
+				"position": 1,
+				"action": "Tap the \"Live\" button",
+				"expected_result": "The \u201cLive\u201c page open successfully",
+				"data": ""
+			}, {
+				"position": 2,
+				"action": "Tap the \"TRENDING\" button",
+				"expected_result": "The user see the most trendings profils successfully",
+				"data": ""
+			}]
+		}, {
+			"id": 101,
+			"title": "Report user",
+			"description": "Testing can report determined user",
+			"preconditions": "1. Registered user\n2. Open MeetMe application\n3. Executed on: iPhone XR, IOS version: 15",
+			"postconditions": null,
+			"priority": "medium",
+			"severity": "undefined",
+			"behavior": "positive",
+			"type": "functional",
+			"layer": "unknown",
+			"is_flaky": "no",
+			"automation": "is-not-automated",
+			"status": "actual",
+			"milestone": null,
+			"custom_fields": [],
+			"steps": [{
+				"position": 1,
+				"action": "Tap the person from the list",
+				"expected_result": "Chat page is loaded",
+				"data": ""
+			}, {
+				"position": 2,
+				"action": "Tap the \"...\" button",
+				"expected_result": "The menu with additional options is open",
+				"data": ""
+			}, {
+				"position": 3,
+				"action": "Tap the \"View Profile\" button",
+				"expected_result": "All user information is visible",
+				"data": ""
+			}]
+		}, {
+			"id": 102,
+			"title": "The user is tagging himself",
+			"description": "Test the user can add 5 tags in profile",
+			"preconditions": "1. Registered user\n2. Open MeetMe application\n3. Tap the \u201cMe\u201c button\n4. Executed on: iPhone XR, IOS version: 15",
+			"postconditions": null,
+			"priority": "medium",
+			"severity": "undefined",
+			"behavior": "positive",
+			"type": "functional",
+			"layer": "unknown",
+			"is_flaky": "no",
+			"automation": "is-not-automated",
+			"status": "actual",
+			"milestone": null,
+			"custom_fields": [],
+			"steps": [{
+				"position": 1,
+				"action": "Tap the \"Tag Yourself\" button",
+				"expected_result": "Page \"Tag Yourself\" is loaded",
+				"data": ""
+			}, {
+				"position": 2,
+				"action": "Tap the five randomly selected fields",
+				"expected_result": "The user add five tags successfully",
+				"data": ""
+			}, {
+				"position": 3,
+				"action": "Tab the \"Back\" button",
+				"expected_result": "The fields on tags is save",
+				"data": ""
+			}]
+		}, {
+			"id": 103,
+			"title": "User see all Matches",
+			"description": "Test that , user can see all Matches",
+			"preconditions": "1. Registered user\n2. Open MeetMe application\n3. Tap the \u201cMe\u201c button\n4. Executed on: iPhone XR, IOS version: 15",
+			"postconditions": null,
+			"priority": "medium",
+			"severity": "undefined",
+			"behavior": "positive",
+			"type": "functional",
+			"layer": "unknown",
+			"is_flaky": "no",
+			"automation": "is-not-automated",
+			"status": "actual",
+			"milestone": null,
+			"custom_fields": [],
+			"steps": [{
+				"position": 1,
+				"action": "Tap the \"Matches\" button",
+				"expected_result": "The page \"Matches\" is loaded",
+				"data": ""
+			}]
+		}, {
+			"id": 104,
+			"title": "User dislike a Match",
+			"description": "Test that , user can dislike person in Match list",
+			"preconditions": "1. Registered user\n2. Open MeetMe application\n3. Tap the \u201cMe\u201c button\n4. Executed on: iPhone XR, IOS version: 15",
+			"postconditions": null,
+			"priority": "medium",
+			"severity": "undefined",
+			"behavior": "positive",
+			"type": "other",
+			"layer": "unknown",
+			"is_flaky": "no",
+			"automation": "is-not-automated",
+			"status": "actual",
+			"milestone": null,
+			"custom_fields": [],
+			"steps": [{
+				"position": 1,
+				"action": "Tap the \"Matches\" button",
+				"expected_result": "The page \"Matches\" is loaded",
+				"data": ""
+			}, {
+				"position": 2,
+				"action": "Choose the profile",
+				"expected_result": "",
+				"data": ""
+			}, {
+				"position": 3,
+				"action": "Tap the \"X\" button",
+				"expected_result": "The user successfully disliked the profile",
+				"data": ""
+			}]
+		}, {
+			"id": 120,
+			"title": "Who can send me new chats?",
+			"description": "User can choose who can view his new chats",
+			"preconditions": "1. Registered user\n2. Open MeetMe application\n3. Tap the \"Me\" button\n4. Tap the \"Settings\" button",
+			"postconditions": null,
+			"priority": "medium",
+			"severity": "undefined",
+			"behavior": "positive",
+			"type": "functional",
+			"layer": "unknown",
+			"is_flaky": "no",
+			"automation": "is-not-automated",
+			"status": "actual",
+			"milestone": null,
+			"custom_fields": [],
+			"steps": [{
+				"position": 1,
+				"action": "Tap on the \"Privacy and content\" button",
+				"expected_result": "User is redirected to the privacy and content settings",
+				"data": ""
+			}, {
+				"position": 2,
+				"action": "Tap on the \"Who can send me new chats?\" button",
+				"expected_result": "It shows up in windows with some choices",
+				"data": ""
+			}, {
+				"position": 3,
+				"action": "Tap on \"Nobody\" and click OK",
+				"expected_result": "It shows up an message \"Are you sure\" and click on Yes",
+				"data": ""
+			}]
+		}, {
+			"id": 105,
+			"title": "User dislike a Match with slide",
+			"description": "Test that . user can dislike person in match list with slide right to left",
+			"preconditions": "1. Registered user\n2. Open MeetMe application\n3. Tap the \u201cMe\u201c button\n4. Executed on: iPhone XR, IOS version: 15",
+			"postconditions": null,
+			"priority": "medium",
+			"severity": "undefined",
+			"behavior": "positive",
+			"type": "functional",
+			"layer": "unknown",
+			"is_flaky": "no",
+			"automation": "is-not-automated",
+			"status": "actual",
+			"milestone": null,
+			"custom_fields": [],
+			"steps": [{
+				"position": 1,
+				"action": "Tap the \"Matches\" button",
+				"expected_result": "The page \"Matches\" is loaded",
+				"data": ""
+			}, {
+				"position": 2,
+				"action": "Choose the profile",
+				"expected_result": "The page \"Matches\" is open successfully",
+				"data": ""
+			}, {
+				"position": 3,
+				"action": "Slide right to left the screen",
+				"expected_result": "The user successfully disliked the profile",
+				"data": ""
+			}]
+		}, {
+			"id": 106,
+			"title": "The user sees fans",
+			"description": "Test that, user can see him fans",
+			"preconditions": "1. Registered user\n2. Open MeetMe application\n3. Tap the \u201cMe\u201c button\n4. Executed on: iPhone XR, IOS version: 15",
+			"postconditions": null,
+			"priority": "medium",
+			"severity": "undefined",
+			"behavior": "positive",
+			"type": "functional",
+			"layer": "unknown",
+			"is_flaky": "no",
+			"automation": "is-not-automated",
+			"status": "actual",
+			"milestone": null,
+			"custom_fields": [],
+			"steps": [{
+				"position": 1,
+				"action": "Tap the \"Matches\" button",
+				"expected_result": "The page \"Matches\" is loaded",
+				"data": ""
+			}, {
+				"position": 2,
+				"action": "Tap the \"ADMIRERS\" button",
+				"expected_result": "The user successfully see admirers profils",
+				"data": ""
+			}]
+		}, {
+			"id": 107,
+			"title": "User upgrades \"MeetMe+\"",
+			"description": "```\n```",
+			"preconditions": "1. Registered user\n2. Open MeetMe application\n3. Tap the \u201cMe\u201c button\n4. Executed on: iPhone XR, IOS version: 15",
+			"postconditions": null,
+			"priority": "medium",
+			"severity": "undefined",
+			"behavior": "positive",
+			"type": "functional",
+			"layer": "unknown",
+			"is_flaky": "no",
+			"automation": "is-not-automated",
+			"status": "actual",
+			"milestone": null,
+			"custom_fields": [],
+			"steps": [{
+				"position": 1,
+				"action": "Tap the \"Settings\" button",
+				"expected_result": "The page \"Settings\" is loaded",
+				"data": ""
+			}, {
+				"position": 2,
+				"action": "Tap the \"MeetMe+\" button",
+				"expected_result": "My user can choose between three types of subscribers for a month",
+				"data": ""
+			}]
+		}, {
+			"id": 116,
+			"title": "User with MeetMe+ for 1 month",
+			"description": "The user can upgrade to MeetMe+",
+			"preconditions": "1. Registered user\n2. Open MeetMe application\n3. Tap the \"Me\" button\n4. Tap the \"Settings\" button",
+			"postconditions": null,
+			"priority": "medium",
+			"severity": "undefined",
+			"behavior": "positive",
+			"type": "other",
+			"layer": "unknown",
+			"is_flaky": "no",
+			"automation": "is-not-automated",
+			"status": "actual",
+			"milestone": null,
+			"custom_fields": [],
+			"steps": [{
+				"position": 1,
+				"action": "Tap the \"MeetMe+\" button",
+				"expected_result": "It shows up a MeetMe+ plans",
+				"data": ""
+			}, {
+				"position": 2,
+				"action": "Tap on 1 month and tap on Get MeetMe+ now!",
+				"expected_result": "It shows up a payment methods",
+				"data": ""
+			}]
+		}, {
+			"id": 117,
+			"title": "User with MeetMe+ for 3 month",
+			"description": "The user can upgrade to MeetMe+ for 3 month",
+			"preconditions": "1. Registered user\n2. Open MeetMe application\n3. Tap the \"Me\" button\n4. Tap the \"Settings\" button",
+			"postconditions": null,
+			"priority": "medium",
+			"severity": "undefined",
+			"behavior": "positive",
+			"type": "functional",
+			"layer": "unknown",
+			"is_flaky": "no",
+			"automation": "is-not-automated",
+			"status": "actual",
+			"milestone": null,
+			"custom_fields": [],
+			"steps": [{
+				"position": 1,
+				"action": "Tap the \"MeetMe+\" button",
+				"expected_result": "It shows up a MeetMe+ plans",
+				"data": ""
+			}, {
+				"position": 2,
+				"action": "Tap on 3 month and tap on getting MeetMe+ now!",
+				"expected_result": "It shows up a payment methods",
+				"data": ""
+			}]
+		}, {
+			"id": 118,
+			"title": "User with MeetMe+ for  6 months",
+			"description": "The user can upgrade to MeetMe+ for 6 months",
+			"preconditions": "1. Registered user\n2. Open MeetMe application\n3. Tap the \"Me\" button\n4. Tap the \"Settings\" button",
+			"postconditions": null,
+			"priority": "medium",
+			"severity": "undefined",
+			"behavior": "positive",
+			"type": "functional",
+			"layer": "unknown",
+			"is_flaky": "no",
+			"automation": "is-not-automated",
+			"status": "actual",
+			"milestone": null,
+			"custom_fields": [],
+			"steps": [{
+				"position": 1,
+				"action": "Tap the \"MeetMe+\" button",
+				"expected_result": "It shows up a MeetMe+ plans",
+				"data": ""
+			}, {
+				"position": 2,
+				"action": "Tap on 6 month and tap on getting MeetMe+ now!",
+				"expected_result": "It shows up a payment methods",
+				"data": ""
+			}]
+		}, {
+			"id": 110,
+			"title": "Change profile photo",
+			"description": "User can changed profile photo",
+			"preconditions": "1. Registered user\n2. Open MeetMe application\n3. Tap the \"Me\" button\n4. Executed on: iPhone XR, IOS version: 15",
+			"postconditions": null,
+			"priority": "medium",
+			"severity": "undefined",
+			"behavior": "positive",
+			"type": "functional",
+			"layer": "unknown",
+			"is_flaky": "no",
+			"automation": "is-not-automated",
+			"status": "actual",
+			"milestone": null,
+			"custom_fields": [],
+			"steps": [{
+				"position": 1,
+				"action": "Tap on the photo you want to be a profile photo",
+				"expected_result": "The photo is opened",
+				"data": ""
+			}, {
+				"position": 2,
+				"action": "Tap on Options button on the top right corner",
+				"expected_result": "It shows up a choice menu and tap on Make Profile Photo",
+				"data": ""
+			}]
+		}, {
+			"id": 111,
+			"title": "Add profile photo with no human face on it",
+			"description": null,
+			"preconditions": "1. Registered user\n2. Open MeetMe application\n3. Tap the \"Me\" button\n4. Executed on: iPhone XR, IOS version: 15",
+			"postconditions": null,
+			"priority": "medium",
+			"severity": "undefined",
+			"behavior": "positive",
+			"type": "functional",
+			"layer": "unknown",
+			"is_flaky": "no",
+			"automation": "is-not-automated",
+			"status": "actual",
+			"milestone": null,
+			"custom_fields": [],
+			"steps": [{
+				"position": 1,
+				"action": "Tap on Add photo",
+				"expected_result": "User is redirected to phone gallery",
+				"data": ""
+			}, {
+				"position": 2,
+				"action": "Choose a photo without a human face on it",
+				"expected_result": "It shows up a message \"You shoulds how your face!\"and some advices",
+				"data": ""
+			}]
+		}, {
+			"id": 112,
+			"title": "Licenses",
+			"description": "User can read the Licenses of MeetMe application",
+			"preconditions": "1. Registered user\n2. Open MeetMe application\n3. Tap the \"Me\" button\n4. Executed on: iPhone XR, IOS version: 15",
+			"postconditions": null,
+			"priority": "medium",
+			"severity": "undefined",
+			"behavior": "positive",
+			"type": "functional",
+			"layer": "unknown",
+			"is_flaky": "no",
+			"automation": "is-not-automated",
+			"status": "actual",
+			"milestone": null,
+			"custom_fields": [],
+			"steps": [{
+				"position": 1,
+				"action": "Tap the \"Settings\" button",
+				"expected_result": "User is redirected to the application settings page",
+				"data": ""
+			}, {
+				"position": 2,
+				"action": "Tap the \"Licenses\" button",
+				"expected_result": "User is redirected Licenses of MeetMe application",
+				"data": ""
+			}]
+		}, {
+			"id": 113,
+			"title": "Safety",
+			"description": "User can read the Safety terms",
+			"preconditions": "1. Registered user\n2. Open MeetMe application\n3. Tap the \"Me\" button\n4. Executed on: iPhone XR, IOS version: 15",
+			"postconditions": null,
+			"priority": "medium",
+			"severity": "undefined",
+			"behavior": "positive",
+			"type": "functional",
+			"layer": "unknown",
+			"is_flaky": "no",
+			"automation": "is-not-automated",
+			"status": "actual",
+			"milestone": null,
+			"custom_fields": [],
+			"steps": [{
+				"position": 1,
+				"action": "Tap the \"Settings\" button",
+				"expected_result": "User is redirected to the application settings page",
+				"data": ""
+			}, {
+				"position": 2,
+				"action": "Tap the \"Safety\" button",
+				"expected_result": "User is redirected to the Commitment of Safety of MeetMe application",
+				"data": ""
+			}]
+		}, {
+			"id": 114,
+			"title": "Privacy policy",
+			"description": "User can read the Privacy policy",
+			"preconditions": "1. Registered user\n2. Open MeetMe application\n3. Tap the \"Me\" button\n4. Executed on: iPhone XR, IOS version: 15",
+			"postconditions": null,
+			"priority": "medium",
+			"severity": "normal",
+			"behavior": "positive",
+			"type": "other",
+			"layer": "unknown",
+			"is_flaky": "no",
+			"automation": "is-not-automated",
+			"status": "actual",
+			"milestone": null,
+			"custom_fields": [],
+			"steps": [{
+				"position": 1,
+				"action": "Tap the \"Settings\" button",
+				"expected_result": "User is redirected to the application settings page",
+				"data": ""
+			}, {
+				"position": 2,
+				"action": "Tap the \"Privacy policy\" button",
+				"expected_result": "User is redirected to m.meetme.com webpage and can read Privacy policy of MeetMe application",
+				"data": ""
+			}]
+		}, {
+			"id": 115,
+			"title": "Terms of service",
+			"description": "User can read the terms of services",
+			"preconditions": "1. Registered user\n2. Open MeetMe application\n3. Tap the \"Me\" button\n4. Executed on: iPhone XR, IOS version: 15",
+			"postconditions": null,
+			"priority": "medium",
+			"severity": "undefined",
+			"behavior": "positive",
+			"type": "other",
+			"layer": "unknown",
+			"is_flaky": "no",
+			"automation": "is-not-automated",
+			"status": "actual",
+			"milestone": null,
+			"custom_fields": [],
+			"steps": [{
+				"position": 1,
+				"action": "Tap the \"Settings\" button",
+				"expected_result": "User is redirected to the application settings page",
+				"data": ""
+			}, {
+				"position": 2,
+				"action": "Tap the \"Terms of service\" button",
+				"expected_result": "User is redirected to m.meetme.com webpage and can read Terms of service of MeetMe application",
+				"data": ""
+			}]
+		}, {
+			"id": 119,
+			"title": "Who can send me photos?",
+			"description": "User can choose from who can received photos",
+			"preconditions": "1. Registered user\n2. Open MeetMe application\n3. Tap the \"Me\" button\n4. Tap the \"Settings\" button",
+			"postconditions": null,
+			"priority": "medium",
+			"severity": "undefined",
+			"behavior": "positive",
+			"type": "functional",
+			"layer": "unknown",
+			"is_flaky": "no",
+			"automation": "is-not-automated",
+			"status": "actual",
+			"milestone": null,
+			"custom_fields": [],
+			"steps": [{
+				"position": 1,
+				"action": "Tap on the \"Privacy and content\" button",
+				"expected_result": "User is redirected to the privacy and content settings",
+				"data": ""
+			}, {
+				"position": 2,
+				"action": "Tap on the \"Who can send me photos?\" button",
+				"expected_result": "It shows up in windows with some choices",
+				"data": ""
+			}, {
+				"position": 3,
+				"action": "Tap on \"Nobody\" and click OK",
+				"expected_result": "It shows up a message \"Are you sure\" and click on Yes",
+				"data": ""
+			}]
+		}, {
+			"id": 121,
+			"title": "Who can view my posts?",
+			"description": "User can choose who can view his posts",
+			"preconditions": "1. Registered user\n2. Open MeetMe application\n3. Tap the \"Me\" button\n4. Tap the \"Settings\" button\n5. Executed on: iPhone XR, IOS version: 15",
+			"postconditions": null,
+			"priority": "medium",
+			"severity": "undefined",
+			"behavior": "positive",
+			"type": "other",
+			"layer": "unknown",
+			"is_flaky": "no",
+			"automation": "is-not-automated",
+			"status": "actual",
+			"milestone": null,
+			"custom_fields": [],
+			"steps": [{
+				"position": 1,
+				"action": "Tap on the \"Privacy and content\" button",
+				"expected_result": "User is redirected to the privacy and content settings",
+				"data": ""
+			}, {
+				"position": 2,
+				"action": "Tap on the \"Who can view my posts?\" and change to \"Friends only\"",
+				"expected_result": "The posts options changed",
+				"data": ""
+			}]
+		}, {
+			"id": 122,
+			"title": "Who can ask me questions?",
+			"description": "User can choose who can ask me questions?",
+			"preconditions": "1. Registered user\n2. Open MeetMe application\n3. Tap the \"Me\" button\n4. Tap the \"Settings\" button\n5. Executed on: iPhone XR, IOS version: 15",
+			"postconditions": null,
+			"priority": "medium",
+			"severity": "undefined",
+			"behavior": "positive",
+			"type": "functional",
+			"layer": "unknown",
+			"is_flaky": "no",
+			"automation": "is-not-automated",
+			"status": "actual",
+			"milestone": null,
+			"custom_fields": [],
+			"steps": [{
+				"position": 1,
+				"action": "Tap on the \"Privacy and content\" button",
+				"expected_result": "User is redirected to the privacy and content settings",
+				"data": ""
+			}, {
+				"position": 2,
+				"action": "Tap on the \"Who can ask me questions?\" and change to \"Friends only\"",
+				"expected_result": "The posts options changed",
+				"data": ""
+			}]
+		}, {
+			"id": 123,
+			"title": "Manage blocked users",
+			"description": "User can manage blocked users",
+			"preconditions": "1. Registered user\n2. Open MeetMe application\n3. Tap the \"Me\" button\n4. Tap the \"Settings\" button\n5. Executed on: iPhone XR, IOS version: 15",
+			"postconditions": null,
+			"priority": "medium",
+			"severity": "undefined",
+			"behavior": "positive",
+			"type": "functional",
+			"layer": "unknown",
+			"is_flaky": "no",
+			"automation": "is-not-automated",
+			"status": "actual",
+			"milestone": null,
+			"custom_fields": [],
+			"steps": [{
+				"position": 1,
+				"action": "Tap on the \"Privacy and content\" button",
+				"expected_result": "User is redirected to the privacy and content settings",
+				"data": ""
+			}, {
+				"position": 2,
+				"action": "Tap on the \"Manage blocked users\" button",
+				"expected_result": "User can see blocked accounts successfully",
+				"data": ""
+			}]
+		}, {
+			"id": 124,
+			"title": "Share data to see more relevant ads",
+			"description": null,
+			"preconditions": "1. Registered user\n2. Open MeetMe application\n3. Tap the \"Me\" button\n4. Tap the \"Settings\" button\n5. Executed on: iPhone XR, IOS version: 15",
+			"postconditions": null,
+			"priority": "medium",
+			"severity": "undefined",
+			"behavior": "positive",
+			"type": "other",
+			"layer": "unknown",
+			"is_flaky": "no",
+			"automation": "is-not-automated",
+			"status": "actual",
+			"milestone": null,
+			"custom_fields": [],
+			"steps": [{
+				"position": 1,
+				"action": "Tap on the \"Privacy and content\" button",
+				"expected_result": "User is redirected to the privacy and content settings",
+				"data": ""
+			}, {
+				"position": 2,
+				"action": "Tap on the \"Share data to see more relevant ads\" and change to yes or no",
+				"expected_result": "The share options changed",
+				"data": ""
+			}]
+		}, {
+			"id": 125,
+			"title": "Include me in Locals",
+			"description": "User can or cannot see my locals",
+			"preconditions": "1. Registered user\n2. Open MeetMe application\n3. Tap the \"Me\" button\n4. Tap the \"Settings\" button\n5. Executed on: iPhone XR, IOS version: 15",
+			"postconditions": null,
+			"priority": "medium",
+			"severity": "undefined",
+			"behavior": "positive",
+			"type": "other",
+			"layer": "unknown",
+			"is_flaky": "no",
+			"automation": "is-not-automated",
+			"status": "actual",
+			"milestone": null,
+			"custom_fields": [],
+			"steps": [{
+				"position": 1,
+				"action": "Tap on the \"Privacy and content\" button",
+				"expected_result": "User is redirected to the privacy and content settings",
+				"data": ""
+			}, {
+				"position": 2,
+				"action": "Tap on the \"Include me in Locals\" and change to yes or no",
+				"expected_result": "The share options changed",
+				"data": ""
+			}]
+		}, {
+			"id": 126,
+			"title": "Include me in Match",
+			"description": "The user can see on the match",
+			"preconditions": "1. Registered user\n2. Open MeetMe application\n3. Tap the \"Me\" button\n4. Tap the \"Settings\" button\n5. Executed on: iPhone XR, IOS version: 15",
+			"postconditions": null,
+			"priority": "medium",
+			"severity": "undefined",
+			"behavior": "positive",
+			"type": "functional",
+			"layer": "unknown",
+			"is_flaky": "no",
+			"automation": "is-not-automated",
+			"status": "actual",
+			"milestone": null,
+			"custom_fields": [],
+			"steps": [{
+				"position": 1,
+				"action": "Tap on the \"Privacy and content\" button",
+				"expected_result": "User is redirected to the privacy and content settings",
+				"data": ""
+			}, {
+				"position": 2,
+				"action": "Tap on the \"Include me in Matchs\" and change to yes or no",
+				"expected_result": "The share options changed",
+				"data": ""
+			}]
+		}, {
+			"id": 127,
+			"title": "Remove profanity in posts",
+			"description": null,
+			"preconditions": "1. Registered user\n2. Open MeetMe application\n3. Tap the \"Me\" button\n4. Tap the \"Settings\" button\n5. Executed on: iPhone XR, IOS version: 15",
+			"postconditions": null,
+			"priority": "medium",
+			"severity": "undefined",
+			"behavior": "undefined",
+			"type": "functional",
+			"layer": "unknown",
+			"is_flaky": "no",
+			"automation": "is-not-automated",
+			"status": "actual",
+			"milestone": null,
+			"custom_fields": [],
+			"steps": [{
+				"position": 1,
+				"action": "Tap on the \"Privacy and content\" button",
+				"expected_result": "User is redirected to the privacy and content settings",
+				"data": ""
+			}, {
+				"position": 2,
+				"action": "Tap on the \"Remove profanity in posts\" and change to yes or no",
+				"expected_result": "The share options changed",
+				"data": ""
+			}]
+		}, {
+			"id": 128,
+			"title": "Include my profile in Skout",
+			"description": null,
+			"preconditions": "1. Registered user\n2. Open MeetMe application\n3. Tap the \"Me\" button\n4. Tap the \"Settings\" button\n5. Executed on: iPhone XR, IOS version: 15",
+			"postconditions": null,
+			"priority": "medium",
+			"severity": "undefined",
+			"behavior": "positive",
+			"type": "functional",
+			"layer": "unknown",
+			"is_flaky": "no",
+			"automation": "is-not-automated",
+			"status": "actual",
+			"milestone": null,
+			"custom_fields": [],
+			"steps": [{
+				"position": 1,
+				"action": "Tap on the \"Privacy and content\" button",
+				"expected_result": "User is redirected to the privacy and content settings",
+				"data": ""
+			}, {
+				"position": 2,
+				"action": "Tap on the \"Include my profile in Skout\" and change to yes or no",
+				"expected_result": "The options changed",
+				"data": ""
+			}]
+		}, {
+			"id": 149,
+			"title": "Requests - \u0420\u0415\u0414\u0410\u041a\u0422\u0418\u0420\u0410\u0419",
+			"description": "Other users can send you connections requests",
+			"preconditions": "1. Registered user\n2. Open MeetMe application\n3. Executed on: iPhone XR, IOS version: 15",
+			"postconditions": null,
+			"priority": "medium",
+			"severity": "undefined",
+			"behavior": "positive",
+			"type": "functional",
+			"layer": "unknown",
+			"is_flaky": "no",
+			"automation": "is-not-automated",
+			"status": "actual",
+			"milestone": null,
+			"custom_fields": [],
+			"steps": [{
+				"position": 1,
+				"action": "Tap the \"Requests\" button",
+				"expected_result": "User is redirected to the Request section",
+				"data": ""
+			}, {
+				"position": 2,
+				"action": "Scroll down to see all the requests",
+				"expected_result": "User can accepted or declined requests for connection",
+				"data": ""
+			}]
+		}, {
+			"id": 150,
+			"title": "I viewed",
+			"description": "User can see viewed history",
+			"preconditions": "1. Registered user\n2. Open MeetMe application\n3. Tap the \"Me\" button\n4. Executed on: iPhone XR, IOS version: 15",
+			"postconditions": null,
+			"priority": "medium",
+			"severity": "undefined",
+			"behavior": "positive",
+			"type": "functional",
+			"layer": "unknown",
+			"is_flaky": "no",
+			"automation": "is-not-automated",
+			"status": "actual",
+			"milestone": null,
+			"custom_fields": [],
+			"steps": [{
+				"position": 1,
+				"action": "Tap the \"Me\" button",
+				"expected_result": "User is redirected to the Me page",
+				"data": ""
+			}, {
+				"position": 2,
+				"action": "Tap the \"I views\" button",
+				"expected_result": "User is redirected to the views page",
+				"data": ""
+			}, {
+				"position": 3,
+				"action": "Tap the \"I viewed\"",
+				"expected_result": "User can see viewed history",
+				"data": ""
+			}]
+		}]
+	}, {
+		"id": 6,
+		"title": "Chat",
+		"description": null,
+		"preconditions": null,
+		"suites": [],
+		"cases": [{
+			"id": 28,
+			"title": "The user send message to random person",
+			"description": "Chat with a random person from the list with people",
+			"preconditions": "1. Registered user\n2. Open MeetMe application\n3. Executed on: iPhone XR, IOS version: 15",
+			"postconditions": null,
+			"priority": "high",
+			"severity": "undefined",
+			"behavior": "positive",
+			"type": "functional",
+			"layer": "unknown",
+			"is_flaky": "no",
+			"automation": "is-not-automated",
+			"status": "actual",
+			"milestone": null,
+			"custom_fields": [],
+			"steps": [{
+				"position": 1,
+				"action": "Tap the button \u201cChat\u201c",
+				"expected_result": "Page \u201cChat\u201c is loaded",
+				"data": ""
+			}, {
+				"position": 2,
+				"action": "Choose the person from the list",
+				"expected_result": "Profile of person is loaded",
+				"data": ""
+			}, {
+				"position": 3,
+				"action": "Insert some text in the \u201cSay something nice!\u201c field",
+				"expected_result": "Field is filled",
+				"data": ""
+			}, {
+				"position": 4,
+				"action": "Tap the green \u201cSend\u201c button",
+				"expected_result": "The message is sent successfully",
+				"data": ""
+			}]
+		}, {
+			"id": 29,
+			"title": "User can receive message from another person",
+			"description": "The user can receive a message from another person and chatting",
+			"preconditions": "1. Registered user\n2. Open MeetMe application\n3. Executed on: iPhone XR, IOS version: 15",
+			"postconditions": null,
+			"priority": "high",
+			"severity": "undefined",
+			"behavior": "positive",
+			"type": "functional",
+			"layer": "unknown",
+			"is_flaky": "no",
+			"automation": "is-not-automated",
+			"status": "actual",
+			"milestone": null,
+			"custom_fields": [],
+			"steps": [{
+				"position": 1,
+				"action": "Tap the button \u201cChat\u201c",
+				"expected_result": "Page \u201cMy chats\u201c is loaded and there is a notification for a new message",
+				"data": ""
+			}]
+		}, {
+			"id": 30,
+			"title": "Delete chat",
+			"description": "The user can delete conversation with person from chat page",
+			"preconditions": "1. Registered user\n2. Open MeetMe application\n3. Executed on: iPhone XR, IOS version: 15",
+			"postconditions": null,
+			"priority": "high",
+			"severity": "undefined",
+			"behavior": "positive",
+			"type": "functional",
+			"layer": "unknown",
+			"is_flaky": "no",
+			"automation": "is-not-automated",
+			"status": "actual",
+			"milestone": null,
+			"custom_fields": [],
+			"steps": [{
+				"position": 1,
+				"action": "Tap the button \u201cChat\u201c",
+				"expected_result": "Page \u201cChat\u201c is loaded",
+				"data": ""
+			}, {
+				"position": 2,
+				"action": "Hold finger over the first conversation",
+				"expected_result": "There is a \u201cDelete\u201c button in the top right corner",
+				"data": ""
+			}, {
+				"position": 3,
+				"action": "Tap the button \u201cDelete\u201c",
+				"expected_result": "Conversation is deleted",
+				"data": ""
+			}]
+		}, {
+			"id": 31,
+			"title": "Send photos in chat",
+			"description": "Test that, the can send photos in chat",
+			"preconditions": "1. Registered user\n2. Open MeetMe application\n3. Executed on: iPhone XR, IOS version: 15",
+			"postconditions": null,
+			"priority": "medium",
+			"severity": "undefined",
+			"behavior": "positive",
+			"type": "functional",
+			"layer": "unknown",
+			"is_flaky": "no",
+			"automation": "is-not-automated",
+			"status": "actual",
+			"milestone": null,
+			"custom_fields": [],
+			"steps": [{
+				"position": 1,
+				"action": "Tap the \u201cChat\u201c button",
+				"expected_result": "Page \u201cChat\u201c is loaded",
+				"data": ""
+			}, {
+				"position": 2,
+				"action": "Choose the first person from the list",
+				"expected_result": "Profile of person is loaded",
+				"data": ""
+			}, {
+				"position": 3,
+				"action": "Tap the \u201cPhoto\u201c button",
+				"expected_result": "The photo library is opened",
+				"data": ""
+			}, {
+				"position": 4,
+				"action": "Choose photo",
+				"expected_result": "Chosen photo is marked",
+				"data": ""
+			}, {
+				"position": 5,
+				"action": "Tap the \u201cSend\" button",
+				"expected_result": "The photo is sent",
+				"data": ""
+			}]
+		}, {
+			"id": 32,
+			"title": "Start video chat",
+			"description": "Test that, the can start video chat",
+			"preconditions": "1. Registered user\n2. Open MeetMe application\n3. Executed on: iPhone XR, IOS version: 15",
+			"postconditions": null,
+			"priority": "medium",
+			"severity": "undefined",
+			"behavior": "positive",
+			"type": "functional",
+			"layer": "unknown",
+			"is_flaky": "no",
+			"automation": "is-not-automated",
+			"status": "actual",
+			"milestone": null,
+			"custom_fields": [],
+			"steps": [{
+				"position": 1,
+				"action": "Tap the button \u201cChat\u201c",
+				"expected_result": "Page \u201cChat\u201c is loaded",
+				"data": ""
+			}, {
+				"position": 2,
+				"action": "Choose the person from the list",
+				"expected_result": "Profile of person is loaded",
+				"data": ""
+			}, {
+				"position": 3,
+				"action": "Tap the \u201cVideo\u201c button",
+				"expected_result": "Start video chat",
+				"data": ""
+			}]
+		}, {
+			"id": 33,
+			"title": "Send stickers in the chat",
+			"description": "Test that, the user can send stickers in the chat like message",
+			"preconditions": "1. Registered user\n2. Open MeetMe application\n3. Executed on: iPhone XR, IOS version: 15",
+			"postconditions": null,
+			"priority": "medium",
+			"severity": "undefined",
+			"behavior": "positive",
+			"type": "functional",
+			"layer": "unknown",
+			"is_flaky": "no",
+			"automation": "is-not-automated",
+			"status": "actual",
+			"milestone": null,
+			"custom_fields": [],
+			"steps": [{
+				"position": 1,
+				"action": "Tap the \u201cChat\u201c button",
+				"expected_result": "Page \u201cChat\u201c is loaded",
+				"data": ""
+			}, {
+				"position": 2,
+				"action": "Choose the first person from the list",
+				"expected_result": "Profile of person is loaded",
+				"data": ""
+			}, {
+				"position": 3,
+				"action": "Tap the \u201cStickers\u201c button",
+				"expected_result": "Stickers menu is loaded",
+				"data": ""
+			}, {
+				"position": 4,
+				"action": "Tap the \u201cDrinks\" button",
+				"expected_result": "Kinds of stickers connected with drinks are loaded",
+				"data": ""
+			}, {
+				"position": 5,
+				"action": "Tap the first one",
+				"expected_result": "The sticker is sent like a message",
+				"data": ""
+			}]
+		}, {
+			"id": 34,
+			"title": "Send three message in chat",
+			"description": "Test that, the user cannot send more than 2 messages in the chat",
+			"preconditions": "1. Registered user\n2. Open MeetMe application\n3. Executed on: iPhone XR, IOS version: 15",
+			"postconditions": null,
+			"priority": "medium",
+			"severity": "undefined",
+			"behavior": "positive",
+			"type": "functional",
+			"layer": "unknown",
+			"is_flaky": "no",
+			"automation": "is-not-automated",
+			"status": "actual",
+			"milestone": null,
+			"custom_fields": [],
+			"steps": [{
+				"position": 1,
+				"action": "Tap the \u201cChat\u201c button",
+				"expected_result": "Page \u201cChat\u201c is loaded",
+				"data": ""
+			}, {
+				"position": 2,
+				"action": "Choose the person from the list",
+				"expected_result": "Profile of person is loaded",
+				"data": ""
+			}, {
+				"position": 3,
+				"action": "Send some message",
+				"expected_result": "Message is sent",
+				"data": ""
+			}, {
+				"position": 4,
+				"action": "Send the second message",
+				"expected_result": "Message is sent",
+				"data": ""
+			}, {
+				"position": 5,
+				"action": "Send the third message",
+				"expected_result": "The user is notified that have to wait to respond from the other profile",
+				"data": ""
+			}]
+		}, {
+			"id": 35,
+			"title": "Block some profile",
+			"description": "Test that, the can block some person",
+			"preconditions": "1. Registered user\n2. Open MeetMe application\n3. Executed on: iPhone XR, IOS version: 15",
+			"postconditions": null,
+			"priority": "medium",
+			"severity": "undefined",
+			"behavior": "positive",
+			"type": "functional",
+			"layer": "unknown",
+			"is_flaky": "no",
+			"automation": "is-not-automated",
+			"status": "actual",
+			"milestone": null,
+			"custom_fields": [],
+			"steps": [{
+				"position": 1,
+				"action": "Tap the \u201cChat\u201c button",
+				"expected_result": "Page \u201cChat\u201c is loaded",
+				"data": ""
+			}, {
+				"position": 2,
+				"action": "Choose the person from the list",
+				"expected_result": "Profile of person is loaded",
+				"data": ""
+			}, {
+				"position": 3,
+				"action": "Tap the menu (three dots)",
+				"expected_result": "The menu with additional options is open",
+				"data": ""
+			}, {
+				"position": 4,
+				"action": "Tap the \u201cBlock\u201c button",
+				"expected_result": "The user is asked to confirm his choice",
+				"data": ""
+			}, {
+				"position": 5,
+				"action": "Tap the \u201cBlock User\u201c button",
+				"expected_result": "User is blocked",
+				"data": ""
+			}]
+		}, {
+			"id": 36,
+			"title": "View some profile",
+			"description": "Test that, the can view some profile",
+			"preconditions": "1. Registered user\n2. Open MeetMe application\n3. Executed on: iPhone XR, IOS version: 15",
+			"postconditions": null,
+			"priority": "medium",
+			"severity": "undefined",
+			"behavior": "positive",
+			"type": "other",
+			"layer": "unknown",
+			"is_flaky": "no",
+			"automation": "is-not-automated",
+			"status": "actual",
+			"milestone": null,
+			"custom_fields": [],
+			"steps": [{
+				"position": 1,
+				"action": "Tap the \u201cChat\u201c button",
+				"expected_result": "Page \u201cChat\u201c is loaded",
+				"data": ""
+			}, {
+				"position": 2,
+				"action": "Choose the person from the list",
+				"expected_result": "Profile of person is loaded",
+				"data": ""
+			}, {
+				"position": 3,
+				"action": "Tap the menu (three dots)",
+				"expected_result": "The menu with additional options is open",
+				"data": ""
+			}, {
+				"position": 4,
+				"action": "Tap the \u201cView Profile\u201c button",
+				"expected_result": "The page \"View Profile\" opened successfully",
+				"data": ""
+			}]
+		}, {
+			"id": 37,
+			"title": "Refresh the chat",
+			"description": "Test that, can refresh the chat",
+			"preconditions": "1. Registered user\n2. Open MeetMe application\n3. Executed on: iPhone XR, IOS version: 15",
+			"postconditions": null,
+			"priority": "medium",
+			"severity": "undefined",
+			"behavior": "positive",
+			"type": "functional",
+			"layer": "unknown",
+			"is_flaky": "no",
+			"automation": "is-not-automated",
+			"status": "actual",
+			"milestone": null,
+			"custom_fields": [],
+			"steps": [{
+				"position": 1,
+				"action": "Tap the \u201cChat\u201c button",
+				"expected_result": "Page \u201cChat\u201c is loaded",
+				"data": ""
+			}, {
+				"position": 2,
+				"action": "Choose the person from the list",
+				"expected_result": "Profile of person is loaded",
+				"data": ""
+			}, {
+				"position": 3,
+				"action": "Tap the menu (three dots)",
+				"expected_result": "The menu with additional options is open",
+				"data": ""
+			}, {
+				"position": 4,
+				"action": "Tap the \u201cRefresh\u201c button",
+				"expected_result": "The chat refresh successfully",
+				"data": ""
+			}]
+		}, {
+			"id": 38,
+			"title": "The user may report spam and a fake profile",
+			"description": null,
+			"preconditions": "1. Registered user\n2. Open MeetMe application\n3. Executed on: iPhone XR, IOS version: 15",
+			"postconditions": null,
+			"priority": "medium",
+			"severity": "undefined",
+			"behavior": "positive",
+			"type": "functional",
+			"layer": "unknown",
+			"is_flaky": "no",
+			"automation": "is-not-automated",
+			"status": "actual",
+			"milestone": null,
+			"custom_fields": [],
+			"steps": [{
+				"position": 1,
+				"action": "Tap the \u201cChat\u201c button",
+				"expected_result": "Page \u201cChat\u201c is loaded",
+				"data": ""
+			}, {
+				"position": 2,
+				"action": "Choose the person from the list",
+				"expected_result": "Profile of person is loaded",
+				"data": ""
+			}, {
+				"position": 3,
+				"action": "Tap the menu (three dots)",
+				"expected_result": "The menu with additional options is open",
+				"data": ""
+			}, {
+				"position": 4,
+				"action": "Tap the \u201cSpam/Fake Member\u201c button",
+				"expected_result": "The user successfully reports spam or fake profile",
+				"data": ""
+			}]
+		}, {
+			"id": 40,
+			"title": "User can send like",
+			"description": "Test that, the user can send like with comment",
+			"preconditions": "1. Registered user\n2. Open MeetMe application\n3. Executed on: iPhone XR, IOS version: 15",
+			"postconditions": null,
+			"priority": "medium",
+			"severity": "undefined",
+			"behavior": "positive",
+			"type": "functional",
+			"layer": "unknown",
+			"is_flaky": "no",
+			"automation": "is-not-automated",
+			"status": "actual",
+			"milestone": null,
+			"custom_fields": [],
+			"steps": [{
+				"position": 1,
+				"action": "Tap the \u201cChat\u201c button",
+				"expected_result": "Page \u201cChat\u201c is loaded",
+				"data": ""
+			}, {
+				"position": 2,
+				"action": "Choose the person from the list",
+				"expected_result": "Profile of person is loaded",
+				"data": ""
+			}, {
+				"position": 3,
+				"action": "Insert some comment in the comment field",
+				"expected_result": "Field is filled",
+				"data": ""
+			}, {
+				"position": 4,
+				"action": "Tap the \u201cSend Like\u201c button",
+				"expected_result": "The user sent Like successfully",
+				"data": ""
+			}]
+		}, {
+			"id": 42,
+			"title": "Like photo second time",
+			"description": "Test that, the user cannot like one photo more than once time",
+			"preconditions": "1. Registered user\n2. Open MeetMe application\n3. Executed on: iPhone XR, IOS version: 15",
+			"postconditions": null,
+			"priority": "medium",
+			"severity": "undefined",
+			"behavior": "negative",
+			"type": "other",
+			"layer": "unknown",
+			"is_flaky": "no",
+			"automation": "is-not-automated",
+			"status": "actual",
+			"milestone": null,
+			"custom_fields": [],
+			"steps": [{
+				"position": 1,
+				"action": "Tap the \u201cChat\u201c button",
+				"expected_result": "Page \u201cChat\u201c is loaded",
+				"data": ""
+			}, {
+				"position": 2,
+				"action": "Choose the person from the list",
+				"expected_result": "Profile of person is loaded",
+				"data": ""
+			}, {
+				"position": 3,
+				"action": "Insert some comment in the comment field",
+				"expected_result": "Field is filled",
+				"data": ""
+			}, {
+				"position": 4,
+				"action": "Tap the \u201cSend Like\u201c button",
+				"expected_result": "The user sent Like successfully",
+				"data": ""
+			}, {
+				"position": 5,
+				"action": "User see the same photo",
+				"expected_result": "There is no option for like",
+				"data": ""
+			}]
+		}, {
+			"id": 92,
+			"title": "User can see who watching the stream",
+			"description": "Testing that user can see who watching the stream",
+			"preconditions": "1. Registered user\n2. Open MeetMe application\n3. Executed on: iPhone XR, IOS version: 15",
+			"postconditions": null,
+			"priority": "medium",
+			"severity": "undefined",
+			"behavior": "positive",
+			"type": "functional",
+			"layer": "unknown",
+			"is_flaky": "no",
+			"automation": "is-not-automated",
+			"status": "actual",
+			"milestone": null,
+			"custom_fields": [],
+			"steps": [{
+				"position": 1,
+				"action": "Tap the \u201cLive\u201c button",
+				"expected_result": "The \u201cLive\u201c page with all streaming videos is loaded",
+				"data": ""
+			}, {
+				"position": 2,
+				"action": "The \u201cLive\u201c page with all streaming videos is loaded",
+				"expected_result": "Stream begins",
+				"data": ""
+			}, {
+				"position": 3,
+				"action": "Tap the count of viewers",
+				"expected_result": "The menu with viewers is loaded",
+				"data": ""
+			}]
+		}, {
+			"id": 93,
+			"title": "Send request for guest in live stream",
+			"description": "Testing that user can be guest in live stream in someone\u2019s streaming",
+			"preconditions": "1. Registered user\n2. Open MeetMe application\n3. Tap the \u201cLive\u201c button\n4. Executed on: iPhone XR, IOS version: 15",
+			"postconditions": null,
+			"priority": "medium",
+			"severity": "undefined",
+			"behavior": "positive",
+			"type": "functional",
+			"layer": "unknown",
+			"is_flaky": "no",
+			"automation": "is-not-automated",
+			"status": "actual",
+			"milestone": null,
+			"custom_fields": [],
+			"steps": [{
+				"position": 1,
+				"action": "Tap over the first possible Stream",
+				"expected_result": "Stream is started",
+				"data": ""
+			}, {
+				"position": 2,
+				"action": "Tap the \u201c+\u201c button",
+				"expected_result": "More options are visible",
+				"data": ""
+			}, {
+				"position": 3,
+				"action": "Tap the \u201cGuest\u201c button",
+				"expected_result": "Page for the rules is loaded",
+				"data": ""
+			}, {
+				"position": 4,
+				"action": "Tap the \u201cGOT IT\u201c button",
+				"expected_result": "Request is sent",
+				"data": ""
+			}]
+		}]
+	}, {
+		"id": 7,
+		"title": "Filter",
+		"description": null,
+		"preconditions": null,
+		"suites": [],
+		"cases": [{
+			"id": 43,
+			"title": "Filter people by location",
+			"description": "Test that, user can filter people by location",
+			"preconditions": "1. Registered user\n2. Open MeetMe application\n3. Executed on: iPhone XR, IOS version: 15",
+			"postconditions": null,
+			"priority": "medium",
+			"severity": "undefined",
+			"behavior": "positive",
+			"type": "functional",
+			"layer": "unknown",
+			"is_flaky": "no",
+			"automation": "is-not-automated",
+			"status": "actual",
+			"milestone": null,
+			"custom_fields": [],
+			"steps": [{
+				"position": 1,
+				"action": "Tab the \"Filter\" button",
+				"expected_result": "All filters are loaded",
+				"data": ""
+			}, {
+				"position": 2,
+				"action": "Insert in \u201cLocation\u201c filed some city",
+				"expected_result": "Field is filled",
+				"data": ""
+			}, {
+				"position": 3,
+				"action": "Tap the \u201cSave\u201c button",
+				"expected_result": "The list with people near by location\nis loaded",
+				"data": ""
+			}]
+		}, {
+			"id": 44,
+			"title": "Filter people by gender",
+			"description": "Test that, user can filter people by gender",
+			"preconditions": "1. Registered user\n2. Open MeetMe application\n3. Executed on: iPhone XR, IOS version: 15",
+			"postconditions": null,
+			"priority": "medium",
+			"severity": "undefined",
+			"behavior": "positive",
+			"type": "other",
+			"layer": "unknown",
+			"is_flaky": "no",
+			"automation": "is-not-automated",
+			"status": "actual",
+			"milestone": null,
+			"custom_fields": [],
+			"steps": [{
+				"position": 1,
+				"action": "Tap the \"Filters\" button",
+				"expected_result": "All filters are loaded",
+				"data": ""
+			}, {
+				"position": 2,
+				"action": "Tap \u201cGender\u201c filed",
+				"expected_result": "Options are loaded",
+				"data": ""
+			}, {
+				"position": 3,
+				"action": "Choose \u201cWomen\u201c",
+				"expected_result": "Radiobutton is marked",
+				"data": ""
+			}, {
+				"position": 4,
+				"action": "Tab the \"Back\" button",
+				"expected_result": "The list with gender Women is loaded",
+				"data": ""
+			}]
+		}, {
+			"id": 45,
+			"title": "Filter people by age",
+			"description": "Test that, user can filter people by age",
+			"preconditions": "1. Registered user\n2. Open MeetMe application\n3. Executed on: iPhone XR, IOS version: 15",
+			"postconditions": null,
+			"priority": "medium",
+			"severity": "undefined",
+			"behavior": "positive",
+			"type": "functional",
+			"layer": "unknown",
+			"is_flaky": "no",
+			"automation": "is-not-automated",
+			"status": "actual",
+			"milestone": null,
+			"custom_fields": [],
+			"steps": [{
+				"position": 1,
+				"action": "Tap the \u201cFilter\u201c button",
+				"expected_result": "All filters are loaded",
+				"data": ""
+			}, {
+				"position": 2,
+				"action": "Tap \u201cAge\u201c filed",
+				"expected_result": "Options are loaded",
+				"data": ""
+			}, {
+				"position": 3,
+				"action": "Set minimum age",
+				"expected_result": "Minimum age is setted",
+				"data": ""
+			}, {
+				"position": 4,
+				"action": "Set maximum age",
+				"expected_result": "Maximum age is setted",
+				"data": ""
+			}, {
+				"position": 5,
+				"action": "Tap the \u201cBack\u201c button",
+				"expected_result": "The list with people in age range is loaded",
+				"data": ""
+			}]
+		}, {
+			"id": 46,
+			"title": "Filter people by orientation",
+			"description": "Test that, user can filter people by orientation",
+			"preconditions": "1. Registered user\n2. Open MeetMe application\n3. Executed on: iPhone XR, IOS version: 15",
+			"postconditions": null,
+			"priority": "medium",
+			"severity": "undefined",
+			"behavior": "positive",
+			"type": "functional",
+			"layer": "unknown",
+			"is_flaky": "no",
+			"automation": "is-not-automated",
+			"status": "actual",
+			"milestone": null,
+			"custom_fields": [],
+			"steps": [{
+				"position": 1,
+				"action": "Tap the \u201cFilter\u201c button",
+				"expected_result": "All filters are loaded",
+				"data": ""
+			}, {
+				"position": 2,
+				"action": "Tap \u201cOrientation\u201c filed",
+				"expected_result": "Options are loaded",
+				"data": ""
+			}, {
+				"position": 3,
+				"action": "Tap the \u201cStraight\u201c field",
+				"expected_result": "Field is checked",
+				"data": ""
+			}, {
+				"position": 4,
+				"action": "Tap the \u201cBack\u201c button",
+				"expected_result": "The list with straight orientation people is loaded",
+				"data": ""
+			}]
+		}, {
+			"id": 47,
+			"title": "Filter people by covid vaccination status",
+			"description": "Test that, user can filter people by covid vaccination status",
+			"preconditions": "1. Registered user\n2. Open MeetMe application\n3. Executed on: iPhone XR, IOS version: 15",
+			"postconditions": null,
+			"priority": "medium",
+			"severity": "undefined",
+			"behavior": "positive",
+			"type": "functional",
+			"layer": "unknown",
+			"is_flaky": "no",
+			"automation": "is-not-automated",
+			"status": "actual",
+			"milestone": null,
+			"custom_fields": [],
+			"steps": [{
+				"position": 1,
+				"action": "Tap the \u201cFilter\u201c button",
+				"expected_result": "All filters are loaded",
+				"data": ""
+			}, {
+				"position": 2,
+				"action": "Tap \u201cCovid vaccination status\u201c filed",
+				"expected_result": "Options are loaded",
+				"data": ""
+			}, {
+				"position": 3,
+				"action": "Tap the \u201cFully Vaccinated\u201c field",
+				"expected_result": "Field is checked",
+				"data": ""
+			}, {
+				"position": 4,
+				"action": "Tap the \u201cBack\u201c button",
+				"expected_result": "The list with fully vaccinated people is loaded",
+				"data": ""
+			}]
+		}, {
+			"id": 48,
+			"title": "Filter people by height",
+			"description": "Test that, user can filter people by height",
+			"preconditions": "1. Registered user\n2. Open MeetMe application\n3. Executed on: iPhone XR, IOS version: 15",
+			"postconditions": null,
+			"priority": "medium",
+			"severity": "undefined",
+			"behavior": "positive",
+			"type": "functional",
+			"layer": "unknown",
+			"is_flaky": "no",
+			"automation": "is-not-automated",
+			"status": "actual",
+			"milestone": null,
+			"custom_fields": [],
+			"steps": [{
+				"position": 1,
+				"action": "Tap the \u201cFilter\u201c button",
+				"expected_result": "All filters are loaded",
+				"data": ""
+			}, {
+				"position": 2,
+				"action": "Tap \u201cHeight\u201c filed",
+				"expected_result": "Options are loaded",
+				"data": ""
+			}, {
+				"position": 3,
+				"action": "Set minimum height",
+				"expected_result": "Minimum height is setted",
+				"data": ""
+			}, {
+				"position": 4,
+				"action": "Set maximum height",
+				"expected_result": "",
+				"data": ""
+			}, {
+				"position": 5,
+				"action": "Tap the \u201cBack\u201c button",
+				"expected_result": "The list with height range people is loaded",
+				"data": ""
+			}]
+		}, {
+			"id": 49,
+			"title": "Filter people by online now only",
+			"description": "Test that, user can filter people by online now",
+			"preconditions": "1. Registered user\n2. Open MeetMe application\n3. Executed on: iPhone XR, IOS version: 15",
+			"postconditions": null,
+			"priority": "medium",
+			"severity": "undefined",
+			"behavior": "positive",
+			"type": "functional",
+			"layer": "unknown",
+			"is_flaky": "no",
+			"automation": "is-not-automated",
+			"status": "actual",
+			"milestone": null,
+			"custom_fields": [],
+			"steps": [{
+				"position": 1,
+				"action": "Tap the \u201cFilter\u201c button",
+				"expected_result": "All filters are loaded",
+				"data": ""
+			}, {
+				"position": 2,
+				"action": "Tap \u201cShow online now only\u201c filed",
+				"expected_result": "The list with people online now is loaded",
+				"data": ""
+			}]
+		}, {
+			"id": 51,
+			"title": "Filter people by education",
+			"description": "Test that, user can filter people by education",
+			"preconditions": "1. Registered user\n2. Open MeetMe application\n3. Executed on: iPhone XR, IOS version: 15",
+			"postconditions": null,
+			"priority": "medium",
+			"severity": "undefined",
+			"behavior": "positive",
+			"type": "functional",
+			"layer": "unknown",
+			"is_flaky": "no",
+			"automation": "is-not-automated",
+			"status": "actual",
+			"milestone": null,
+			"custom_fields": [],
+			"steps": [{
+				"position": 1,
+				"action": "Tap the \u201cFilter\u201c button",
+				"expected_result": "All filters are loaded",
+				"data": ""
+			}, {
+				"position": 2,
+				"action": "Tap \u201cEducation\u201c filed",
+				"expected_result": "Options are loaded",
+				"data": ""
+			}, {
+				"position": 3,
+				"action": "Tap \u201cMaster's\u201c",
+				"expected_result": "Field is checked",
+				"data": ""
+			}, {
+				"position": 4,
+				"action": "Tap the \u201cBack\u201c button",
+				"expected_result": "The list with people with Master's education is loaded",
+				"data": ""
+			}]
+		}, {
+			"id": 52,
+			"title": "Filter people by smoking",
+			"description": "Test that, user can filter people by smoking",
+			"preconditions": "1. Registered user\n2. Open MeetMe application\n3. Executed on: iPhone XR, IOS version: 15",
+			"postconditions": null,
+			"priority": "medium",
+			"severity": "undefined",
+			"behavior": "positive",
+			"type": "functional",
+			"layer": "unknown",
+			"is_flaky": "no",
+			"automation": "is-not-automated",
+			"status": "actual",
+			"milestone": null,
+			"custom_fields": [],
+			"steps": [{
+				"position": 1,
+				"action": "Tap the \u201cFilter\u201c button",
+				"expected_result": "All filters are loaded",
+				"data": ""
+			}, {
+				"position": 2,
+				"action": "Tap \u201cSmoking\u201c filed",
+				"expected_result": "Options are loaded",
+				"data": ""
+			}, {
+				"position": 3,
+				"action": "Tap \u201cNo way\u201c",
+				"expected_result": "Field is checked",
+				"data": ""
+			}, {
+				"position": 4,
+				"action": "Tap the \u201cBack\u201c button",
+				"expected_result": "The list with people with no way smoking is loaded",
+				"data": ""
+			}]
+		}, {
+			"id": 67,
+			"title": "Filter desire about gender",
+			"description": "Test that, the user can make filters about people in the Match page",
+			"preconditions": "1. Registered user\n2. Open MeetMe application\n3. Tap the \"Match\" button\n4. Executed on: iPhone XR, IOS version: 15",
+			"postconditions": null,
+			"priority": "medium",
+			"severity": "undefined",
+			"behavior": "positive",
+			"type": "functional",
+			"layer": "unknown",
+			"is_flaky": "no",
+			"automation": "is-not-automated",
+			"status": "actual",
+			"milestone": null,
+			"custom_fields": [],
+			"steps": [{
+				"position": 1,
+				"action": "Tap the \u201cFilter\u201c button",
+				"expected_result": "The \u201cFilters\u201c page is loaded",
+				"data": ""
+			}, {
+				"position": 2,
+				"action": "Tap kind of gender in the \u201cI want to see\u201c field",
+				"expected_result": "The chosen gender is in green frame",
+				"data": ""
+			}, {
+				"position": 3,
+				"action": "Tap the \u201cBack\u201c button",
+				"expected_result": "In Match page is only Girls",
+				"data": ""
+			}]
+		}, {
+			"id": 68,
+			"title": "Filter by Location",
+			"description": "Test that, the user can make filters about people in the Match page",
+			"preconditions": "1. Registered user\n2. Open MeetMe application\n3. Tap the \"Match\" button\n4. Executed on: iPhone XR, IOS version: 15",
+			"postconditions": null,
+			"priority": "medium",
+			"severity": "undefined",
+			"behavior": "positive",
+			"type": "functional",
+			"layer": "unknown",
+			"is_flaky": "no",
+			"automation": "is-not-automated",
+			"status": "actual",
+			"milestone": null,
+			"custom_fields": [],
+			"steps": [{
+				"position": 1,
+				"action": "Tap the \u201cFilter\u201c button",
+				"expected_result": "The \u201cFilters\u201c page is loaded",
+				"data": ""
+			}, {
+				"position": 2,
+				"action": "Tap location in the \u201cLocated in\u201d field",
+				"expected_result": "The chosen location is in white color",
+				"data": ""
+			}, {
+				"position": 3,
+				"action": "Tap the \u201cBack\u201c button",
+				"expected_result": "The people In Match page is only from Bulgaria",
+				"data": ""
+			}]
+		}, {
+			"id": 69,
+			"title": "Filter by age",
+			"description": "Test that, the user can make filters about people in the Match page",
+			"preconditions": "1. Registered user\n2. Open MeetMe application\n3. Tap the \"Match\" button\n4. Executed on: iPhone XR, IOS version: 15",
+			"postconditions": null,
+			"priority": "medium",
+			"severity": "undefined",
+			"behavior": "undefined",
+			"type": "functional",
+			"layer": "unknown",
+			"is_flaky": "no",
+			"automation": "is-not-automated",
+			"status": "actual",
+			"milestone": null,
+			"custom_fields": [],
+			"steps": [{
+				"position": 1,
+				"action": "Tap the \u201cFilter\u201c button",
+				"expected_result": "The \u201cFilters\u201c page is loaded",
+				"data": ""
+			}, {
+				"position": 2,
+				"action": "Tap range in the \u201cBetween the ages of\u201d field",
+				"expected_result": "The chosen range is in white color",
+				"data": ""
+			}, {
+				"position": 3,
+				"action": "Tap the \u201cBack\u201c button",
+				"expected_result": "The people In Match page is in 31-40 age range",
+				"data": ""
+			}]
+		}, {
+			"id": 86,
+			"title": "Filter streams by location",
+			"description": null,
+			"preconditions": "1. Registered user\n2. Open MeetMe application\n3. Tap the \u201cLive\u201c button\n4. Executed on: iPhone XR, IOS version: 15",
+			"postconditions": null,
+			"priority": "medium",
+			"severity": "undefined",
+			"behavior": "positive",
+			"type": "other",
+			"layer": "unknown",
+			"is_flaky": "no",
+			"automation": "is-not-automated",
+			"status": "actual",
+			"milestone": null,
+			"custom_fields": [],
+			"steps": [{
+				"position": 1,
+				"action": "Tap the \u201cFilter\u201c button",
+				"expected_result": "The filter page is open",
+				"data": ""
+			}, {
+				"position": 2,
+				"action": "Tap Location \u201cEastern Europe\u201d",
+				"expected_result": "Radiobutton is checked",
+				"data": ""
+			}, {
+				"position": 3,
+				"action": "Tap the \u201cSAVE\u201c button",
+				"expected_result": "Streams is showed according to set filter",
+				"data": ""
+			}]
+		}]
+	}]
+}
